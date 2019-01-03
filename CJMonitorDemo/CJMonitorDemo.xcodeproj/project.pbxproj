@@ -28,6 +28,11 @@
 		785FED5221DDF82E00975192 /* LogMonitorHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 785FED4A21DDF82E00975192 /* LogMonitorHomeViewController.m */; };
 		785FED5321DDF82E00975192 /* SuspendHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 785FED4D21DDF82E00975192 /* SuspendHomeViewController.m */; };
 		785FED5421DDF82E00975192 /* DataMonitorHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 785FED5021DDF82E00975192 /* DataMonitorHomeViewController.m */; };
+		785FED5E21DDFE2400975192 /* LogViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 785FED5621DDFE2400975192 /* LogViewViewController.xib */; };
+		785FED5F21DDFE2400975192 /* LogSuspendWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 785FED5821DDFE2400975192 /* LogSuspendWindowViewController.m */; };
+		785FED6021DDFE2400975192 /* LogUtilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 785FED5921DDFE2400975192 /* LogUtilViewController.xib */; };
+		785FED6121DDFE2400975192 /* LogUtilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 785FED5A21DDFE2400975192 /* LogUtilViewController.m */; };
+		785FED6221DDFE2400975192 /* LogViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 785FED5C21DDFE2400975192 /* LogViewViewController.m */; };
 		AD06C42E05081A55CC2AEF7A /* libPods-CJMonitorDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B176C59855DD66797D5A884 /* libPods-CJMonitorDemoUITests.a */; };
 		D181A835D44F9051F4BEF6F5 /* libPods-CJMonitorDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB42E3BA2ABD52D66E9B58E6 /* libPods-CJMonitorDemo.a */; };
 /* End PBXBuildFile section */
@@ -89,6 +94,14 @@
 		785FED4E21DDF82E00975192 /* SuspendHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendHomeViewController.h; sourceTree = "<group>"; };
 		785FED5021DDF82E00975192 /* DataMonitorHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMonitorHomeViewController.m; sourceTree = "<group>"; };
 		785FED5121DDF82E00975192 /* DataMonitorHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMonitorHomeViewController.h; sourceTree = "<group>"; };
+		785FED5621DDFE2400975192 /* LogViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogViewViewController.xib; sourceTree = "<group>"; };
+		785FED5721DDFE2400975192 /* LogViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogViewViewController.h; sourceTree = "<group>"; };
+		785FED5821DDFE2400975192 /* LogSuspendWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogSuspendWindowViewController.m; sourceTree = "<group>"; };
+		785FED5921DDFE2400975192 /* LogUtilViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogUtilViewController.xib; sourceTree = "<group>"; };
+		785FED5A21DDFE2400975192 /* LogUtilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogUtilViewController.m; sourceTree = "<group>"; };
+		785FED5B21DDFE2400975192 /* LogSuspendWindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogSuspendWindowViewController.h; sourceTree = "<group>"; };
+		785FED5C21DDFE2400975192 /* LogViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewViewController.m; sourceTree = "<group>"; };
+		785FED5D21DDFE2400975192 /* LogUtilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogUtilViewController.h; sourceTree = "<group>"; };
 		8A12B95A5BD778F620FF270A /* libPods-CJMonitorDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJMonitorDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B176C59855DD66797D5A884 /* libPods-CJMonitorDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJMonitorDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27549A87E92831820BB23EC /* Pods-CJMonitorDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJMonitorDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJMonitorDemoTests/Pods-CJMonitorDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -290,6 +303,7 @@
 			children = (
 				785FED4B21DDF82E00975192 /* LogMonitorHomeViewController.h */,
 				785FED4A21DDF82E00975192 /* LogMonitorHomeViewController.m */,
+				785FED5521DDFE2400975192 /* LogDemo */,
 			);
 			path = LogMonitorDemo;
 			sourceTree = "<group>";
@@ -310,6 +324,21 @@
 				785FED5021DDF82E00975192 /* DataMonitorHomeViewController.m */,
 			);
 			path = DataMonitorDemo;
+			sourceTree = "<group>";
+		};
+		785FED5521DDFE2400975192 /* LogDemo */ = {
+			isa = PBXGroup;
+			children = (
+				785FED5B21DDFE2400975192 /* LogSuspendWindowViewController.h */,
+				785FED5821DDFE2400975192 /* LogSuspendWindowViewController.m */,
+				785FED5D21DDFE2400975192 /* LogUtilViewController.h */,
+				785FED5A21DDFE2400975192 /* LogUtilViewController.m */,
+				785FED5921DDFE2400975192 /* LogUtilViewController.xib */,
+				785FED5721DDFE2400975192 /* LogViewViewController.h */,
+				785FED5C21DDFE2400975192 /* LogViewViewController.m */,
+				785FED5621DDFE2400975192 /* LogViewViewController.xib */,
+			);
+			path = LogDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,11 +449,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				785FED3C21DDF71200975192 /* badgeButton_normal@3x.png in Resources */,
+				785FED6021DDFE2400975192 /* LogUtilViewController.xib in Resources */,
 				785FED3B21DDF71200975192 /* badgeButton_normal@2x.png in Resources */,
 				785FED4221DDF71200975192 /* MainAsset.xcassets in Resources */,
 				785FED3D21DDF71200975192 /* badgeButton_highlighted@3x.png in Resources */,
 				785FED4321DDF71200975192 /* AppAssets.xcassets in Resources */,
 				785FED3E21DDF71200975192 /* badgeButton_highlighted@2x.png in Resources */,
+				785FED5E21DDFE2400975192 /* LogViewViewController.xib in Resources */,
 				785FECF921DDF32D00975192 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,6 +568,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785FED6221DDFE2400975192 /* LogViewViewController.m in Sources */,
+				785FED5F21DDFE2400975192 /* LogSuspendWindowViewController.m in Sources */,
 				785FED3A21DDF71200975192 /* DemoAlert.m in Sources */,
 				785FED5221DDF82E00975192 /* LogMonitorHomeViewController.m in Sources */,
 				785FED5321DDF82E00975192 /* SuspendHomeViewController.m in Sources */,
@@ -544,6 +577,7 @@
 				785FED4121DDF71200975192 /* CJUIKitBaseViewController.m in Sources */,
 				785FED5421DDF82E00975192 /* DataMonitorHomeViewController.m in Sources */,
 				785FED0121DDF32F00975192 /* main.m in Sources */,
+				785FED6121DDFE2400975192 /* LogUtilViewController.m in Sources */,
 				785FED3921DDF71200975192 /* DemoBarButtonItemFactory.m in Sources */,
 				785FED4721DDF76300975192 /* AppDelegate+WindowRootViewController.m in Sources */,
 				785FECF321DDF32D00975192 /* AppDelegate.m in Sources */,

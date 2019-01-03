@@ -8,6 +8,12 @@
 
 #import "LogMonitorHomeViewController.h"
 
+//Log
+#import "LogUtilViewController.h"
+#import "LogViewViewController.h"
+#import "LogSuspendWindowViewController.h"
+
+
 @interface LogMonitorHomeViewController ()
 
 @end
@@ -21,18 +27,31 @@
     self.navigationItem.title = NSLocalizedString(@"LogMonitor首页", nil);
     
     NSMutableArray *sectionDataModels = [[NSMutableArray alloc] init];
-    //弹窗
+    //Log
     {
-//        CJSectionDataModel *sectionDataModel = [[CJSectionDataModel alloc] init];
-//        sectionDataModel.theme = @"Upload相关";
-//        {
-//            CJModuleModel *toastUtilModule = [[CJModuleModel alloc] init];
-//            toastUtilModule.title = @"UploadViewController";
-//            toastUtilModule.classEntry = [UploadViewController class];
-//            [sectionDataModel.values addObject:toastUtilModule];
-//        }
-//        
-//        [sectionDataModels addObject:sectionDataModel];
+        CJSectionDataModel *sectionDataModel = [[CJSectionDataModel alloc] init];
+        sectionDataModel.theme = @"日志(Log)相关";
+        {
+            CJModuleModel *toastUtilModule = [[CJModuleModel alloc] init];
+            toastUtilModule.title = @"LogUtil(输入、输出)";
+            toastUtilModule.classEntry = [LogUtilViewController class];
+            toastUtilModule.isCreateByXib = YES;
+            [sectionDataModel.values addObject:toastUtilModule];
+        }
+        {
+            CJModuleModel *toastUtilModule = [[CJModuleModel alloc] init];
+            toastUtilModule.title = @"LogView(Log视图)";
+            toastUtilModule.classEntry = [LogViewViewController class];
+            toastUtilModule.isCreateByXib = YES;
+            [sectionDataModel.values addObject:toastUtilModule];
+        }
+        {
+            CJModuleModel *toastUtilModule = [[CJModuleModel alloc] init];
+            toastUtilModule.title = @"LogSuspendWindow(Log悬浮球)";
+            toastUtilModule.classEntry = [LogSuspendWindowViewController class];
+            [sectionDataModel.values addObject:toastUtilModule];
+        }
+        [sectionDataModels addObject:sectionDataModel];
     }
     
     

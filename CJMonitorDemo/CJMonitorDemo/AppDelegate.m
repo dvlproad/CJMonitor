@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "AppDelegate+WindowRootViewController.h"
 
+#import <CJMonitor/CJLogUtil.h>
+
 @interface AppDelegate ()
 
 @end
@@ -18,6 +20,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    CJLog(@"测试环境写过log");
+    CJAppLog(CJAppLogTypeDEBUG, @"0", @"测试环境写过log");
+    
     // 设置主窗口,并设置根控制器
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [self getMainRootViewController];

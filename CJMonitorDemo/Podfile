@@ -29,10 +29,12 @@ target 'CJMonitorDemo' do
     pod 'CJBaseUIKit',  :subspecs => ['UIColor', 'UIButton', 'UITextField', 'CJToast', 'CJAlert']
     pod 'CJFoundation', :subspecs => ['NSString']
     pod 'CJBaseHelper', :subspecs => ['NSObjectCJHelper', 'UIViewControllerCJHelper', 'AuthorizationCJHelper']
-    pod 'CJBaseUtil',   :subspecs => ['CJLog', 'CJDataUtil']
+    pod 'CJBaseUtil',   :subspecs => ['CJDataUtil']
     
     pod 'IQKeyboardManager'
     pod 'DZNEmptyDataSet'
+    
+    pod 'CJMonitor',        :path => '~/Project/Github/CJMonitor’
 end
 
 target 'CJMonitorDemoTests' do
