@@ -4,16 +4,12 @@ PODS:
   - CJBaseHelper/UIViewControllerCJHelper (0.1.0)
   - CJBaseTest/Test (0.0.1)
   - CJBaseTest/UITest (0.0.1)
-  - CJBaseUIKit/CJAlert (0.3.0):
+  - CJBaseUIKit/UIButton (0.6.0)
+  - CJBaseUIKit/UIColor (0.6.0)
+  - CJBaseUIKit/UITextField (0.6.0):
     - CJBaseUIKit/UIView/CJPopupAction
-    - Masonry
-  - CJBaseUIKit/CJToast (0.3.0):
-    - MBProgressHUD
-  - CJBaseUIKit/UIButton (0.3.0)
-  - CJBaseUIKit/UIColor (0.3.0)
-  - CJBaseUIKit/UITextField (0.3.0)
-  - CJBaseUIKit/UIView/CJDragAction (0.3.0)
-  - CJBaseUIKit/UIView/CJPopupAction (0.3.0)
+  - CJBaseUIKit/UIView/CJDragAction (0.6.0)
+  - CJBaseUIKit/UIView/CJPopupAction (0.6.0)
   - CJBaseUtil/CJDataUtil (0.4.5)
   - CJFoundation/NSString (0.1.2)
   - CJMonitor (0.0.1):
@@ -21,10 +17,12 @@ PODS:
   - CJMonitor/CJLog (0.0.1):
     - CJBaseUIKit/UIView/CJDragAction
     - Masonry
+  - CQDemoKit/Home_Base (0.3.1):
+    - CJBaseUtil/CJDataUtil
+    - Masonry
   - DZNEmptyDataSet (1.8.1)
   - IQKeyboardManager (6.2.0)
   - Masonry (1.1.0)
-  - MBProgressHUD (1.1.0)
 
 DEPENDENCIES:
   - CJBaseHelper/AuthorizationCJHelper
@@ -32,28 +30,27 @@ DEPENDENCIES:
   - CJBaseHelper/UIViewControllerCJHelper
   - CJBaseTest/Test
   - CJBaseTest/UITest
-  - CJBaseUIKit/CJAlert
-  - CJBaseUIKit/CJToast
   - CJBaseUIKit/UIButton
   - CJBaseUIKit/UIColor
   - CJBaseUIKit/UITextField
   - CJBaseUtil/CJDataUtil
   - CJFoundation/NSString
   - CJMonitor (from `~/Project/Github/CJMonitor`)
+  - CQDemoKit/Home_Base (~> 0.3.1)
   - DZNEmptyDataSet
   - IQKeyboardManager
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - CJBaseHelper
     - CJBaseTest
     - CJBaseUIKit
     - CJBaseUtil
     - CJFoundation
+    - CQDemoKit
     - DZNEmptyDataSet
     - IQKeyboardManager
     - Masonry
-    - MBProgressHUD
 
 EXTERNAL SOURCES:
   CJMonitor:
@@ -62,15 +59,15 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   CJBaseHelper: c8f9a88876630af59aba9a9da240d327d3444c10
   CJBaseTest: d54c1d1a0ee98d7200039fc7bed6f6c9be53c8bb
-  CJBaseUIKit: 6706574187fb6beb8adcc5c72d70f1815ec232cc
+  CJBaseUIKit: d4945467678c73b872c7ddfb5367d4063ff28add
   CJBaseUtil: 91723cabc776ae2e4f1d91595775798202636d42
   CJFoundation: 2c27b7ad85ec0cc5ac24aa112867971e01ae3ea3
-  CJMonitor: 444c5474310a9476346e4a6b806ffa58ad91e97a
+  CJMonitor: 9f770c8334f07f237281775b50f0597e5c50b3a0
+  CQDemoKit: 939ad9b106b105b875a77a3e1ab21bfbed964c27
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
 
-PODFILE CHECKSUM: 3cb8b20d72c70f4d67ab4d32e39f8d80949a025e
+PODFILE CHECKSUM: 2e9e32d03a7bc880455454981eaa22a2f594bcb0
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.8.4

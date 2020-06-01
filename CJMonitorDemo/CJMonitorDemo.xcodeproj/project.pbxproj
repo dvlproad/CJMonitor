@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,15 +13,6 @@
 		785FED0121DDF32F00975192 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 785FED0021DDF32F00975192 /* main.m */; };
 		785FED0B21DDF32F00975192 /* CJMonitorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 785FED0A21DDF32F00975192 /* CJMonitorDemoTests.m */; };
 		785FED1621DDF32F00975192 /* CJMonitorDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 785FED1521DDF32F00975192 /* CJMonitorDemoUITests.m */; };
-		785FED3921DDF71200975192 /* DemoBarButtonItemFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 785FED2521DDF71200975192 /* DemoBarButtonItemFactory.m */; };
-		785FED3A21DDF71200975192 /* DemoAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 785FED2921DDF71200975192 /* DemoAlert.m */; };
-		785FED3B21DDF71200975192 /* badgeButton_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 785FED2B21DDF71200975192 /* badgeButton_normal@2x.png */; };
-		785FED3C21DDF71200975192 /* badgeButton_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 785FED2D21DDF71200975192 /* badgeButton_normal@3x.png */; };
-		785FED3D21DDF71200975192 /* badgeButton_highlighted@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 785FED2E21DDF71200975192 /* badgeButton_highlighted@3x.png */; };
-		785FED3E21DDF71200975192 /* badgeButton_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 785FED2F21DDF71200975192 /* badgeButton_highlighted@2x.png */; };
-		785FED3F21DDF71200975192 /* DemoButtonFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 785FED3021DDF71200975192 /* DemoButtonFactory.m */; };
-		785FED4021DDF71200975192 /* CJUIKitBaseHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 785FED3321DDF71200975192 /* CJUIKitBaseHomeViewController.m */; };
-		785FED4121DDF71200975192 /* CJUIKitBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 785FED3521DDF71200975192 /* CJUIKitBaseViewController.m */; };
 		785FED4221DDF71200975192 /* MainAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 785FED3721DDF71200975192 /* MainAsset.xcassets */; };
 		785FED4321DDF71200975192 /* AppAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 785FED3821DDF71200975192 /* AppAssets.xcassets */; };
 		785FED4721DDF76300975192 /* AppDelegate+WindowRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 785FED4621DDF76300975192 /* AppDelegate+WindowRootViewController.m */; };
@@ -70,20 +61,6 @@
 		785FED1121DDF32F00975192 /* CJMonitorDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJMonitorDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		785FED1521DDF32F00975192 /* CJMonitorDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJMonitorDemoUITests.m; sourceTree = "<group>"; };
 		785FED1721DDF32F00975192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		785FED2521DDF71200975192 /* DemoBarButtonItemFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBarButtonItemFactory.m; sourceTree = "<group>"; };
-		785FED2621DDF71200975192 /* DemoBarButtonItemFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBarButtonItemFactory.h; sourceTree = "<group>"; };
-		785FED2821DDF71200975192 /* DemoAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoAlert.h; sourceTree = "<group>"; };
-		785FED2921DDF71200975192 /* DemoAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoAlert.m; sourceTree = "<group>"; };
-		785FED2B21DDF71200975192 /* badgeButton_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "badgeButton_normal@2x.png"; sourceTree = "<group>"; };
-		785FED2C21DDF71200975192 /* DemoButtonFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoButtonFactory.h; sourceTree = "<group>"; };
-		785FED2D21DDF71200975192 /* badgeButton_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "badgeButton_normal@3x.png"; sourceTree = "<group>"; };
-		785FED2E21DDF71200975192 /* badgeButton_highlighted@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "badgeButton_highlighted@3x.png"; sourceTree = "<group>"; };
-		785FED2F21DDF71200975192 /* badgeButton_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "badgeButton_highlighted@2x.png"; sourceTree = "<group>"; };
-		785FED3021DDF71200975192 /* DemoButtonFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoButtonFactory.m; sourceTree = "<group>"; };
-		785FED3221DDF71200975192 /* CJUIKitBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJUIKitBaseViewController.h; sourceTree = "<group>"; };
-		785FED3321DDF71200975192 /* CJUIKitBaseHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJUIKitBaseHomeViewController.m; sourceTree = "<group>"; };
-		785FED3421DDF71200975192 /* CJUIKitBaseHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJUIKitBaseHomeViewController.h; sourceTree = "<group>"; };
-		785FED3521DDF71200975192 /* CJUIKitBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJUIKitBaseViewController.m; sourceTree = "<group>"; };
 		785FED3721DDF71200975192 /* MainAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MainAsset.xcassets; sourceTree = "<group>"; };
 		785FED3821DDF71200975192 /* AppAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppAssets.xcassets; sourceTree = "<group>"; };
 		785FED4521DDF76300975192 /* AppDelegate+WindowRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+WindowRootViewController.h"; sourceTree = "<group>"; };
@@ -191,7 +168,6 @@
 				785FED4521DDF76300975192 /* AppDelegate+WindowRootViewController.h */,
 				785FED4621DDF76300975192 /* AppDelegate+WindowRootViewController.m */,
 				785FED4821DDF77A00975192 /* Modules */,
-				785FED2321DDF71200975192 /* CommonUI */,
 				785FED3621DDF71200975192 /* Resources */,
 				785FED4421DDF73100975192 /* Supporting Files */,
 			);
@@ -214,59 +190,6 @@
 				785FED1721DDF32F00975192 /* Info.plist */,
 			);
 			path = CJMonitorDemoUITests;
-			sourceTree = "<group>";
-		};
-		785FED2321DDF71200975192 /* CommonUI */ = {
-			isa = PBXGroup;
-			children = (
-				785FED2421DDF71200975192 /* DemoBarButtonItemFactory */,
-				785FED2721DDF71200975192 /* DemoAlert */,
-				785FED2A21DDF71200975192 /* DemoButtonFactory */,
-				785FED3121DDF71200975192 /* Base */,
-			);
-			path = CommonUI;
-			sourceTree = "<group>";
-		};
-		785FED2421DDF71200975192 /* DemoBarButtonItemFactory */ = {
-			isa = PBXGroup;
-			children = (
-				785FED2521DDF71200975192 /* DemoBarButtonItemFactory.m */,
-				785FED2621DDF71200975192 /* DemoBarButtonItemFactory.h */,
-			);
-			path = DemoBarButtonItemFactory;
-			sourceTree = "<group>";
-		};
-		785FED2721DDF71200975192 /* DemoAlert */ = {
-			isa = PBXGroup;
-			children = (
-				785FED2821DDF71200975192 /* DemoAlert.h */,
-				785FED2921DDF71200975192 /* DemoAlert.m */,
-			);
-			path = DemoAlert;
-			sourceTree = "<group>";
-		};
-		785FED2A21DDF71200975192 /* DemoButtonFactory */ = {
-			isa = PBXGroup;
-			children = (
-				785FED2B21DDF71200975192 /* badgeButton_normal@2x.png */,
-				785FED2C21DDF71200975192 /* DemoButtonFactory.h */,
-				785FED2D21DDF71200975192 /* badgeButton_normal@3x.png */,
-				785FED2E21DDF71200975192 /* badgeButton_highlighted@3x.png */,
-				785FED2F21DDF71200975192 /* badgeButton_highlighted@2x.png */,
-				785FED3021DDF71200975192 /* DemoButtonFactory.m */,
-			);
-			path = DemoButtonFactory;
-			sourceTree = "<group>";
-		};
-		785FED3121DDF71200975192 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				785FED3221DDF71200975192 /* CJUIKitBaseViewController.h */,
-				785FED3321DDF71200975192 /* CJUIKitBaseHomeViewController.m */,
-				785FED3421DDF71200975192 /* CJUIKitBaseHomeViewController.h */,
-				785FED3521DDF71200975192 /* CJUIKitBaseViewController.m */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		785FED3621DDF71200975192 /* Resources */ = {
@@ -448,13 +371,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				785FED3C21DDF71200975192 /* badgeButton_normal@3x.png in Resources */,
 				785FED6021DDFE2400975192 /* LogUtilViewController.xib in Resources */,
-				785FED3B21DDF71200975192 /* badgeButton_normal@2x.png in Resources */,
 				785FED4221DDF71200975192 /* MainAsset.xcassets in Resources */,
-				785FED3D21DDF71200975192 /* badgeButton_highlighted@3x.png in Resources */,
 				785FED4321DDF71200975192 /* AppAssets.xcassets in Resources */,
-				785FED3E21DDF71200975192 /* badgeButton_highlighted@2x.png in Resources */,
 				785FED5E21DDFE2400975192 /* LogViewViewController.xib in Resources */,
 				785FECF921DDF32D00975192 /* Main.storyboard in Resources */,
 			);
@@ -536,29 +455,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CJMonitorDemo/Pods-CJMonitorDemo-resources.sh",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_error.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_error@2x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_error@3x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@2x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@3x.png",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CJMonitorDemo/Pods-CJMonitorDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_error.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_error@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_error@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CJMonitorDemo/Pods-CJMonitorDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJMonitorDemo/Pods-CJMonitorDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CJMonitorDemo/Pods-CJMonitorDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -570,18 +476,13 @@
 			files = (
 				785FED6221DDFE2400975192 /* LogViewViewController.m in Sources */,
 				785FED5F21DDFE2400975192 /* LogSuspendWindowViewController.m in Sources */,
-				785FED3A21DDF71200975192 /* DemoAlert.m in Sources */,
 				785FED5221DDF82E00975192 /* LogMonitorHomeViewController.m in Sources */,
 				785FED5321DDF82E00975192 /* SuspendHomeViewController.m in Sources */,
-				785FED4021DDF71200975192 /* CJUIKitBaseHomeViewController.m in Sources */,
-				785FED4121DDF71200975192 /* CJUIKitBaseViewController.m in Sources */,
 				785FED5421DDF82E00975192 /* DataMonitorHomeViewController.m in Sources */,
 				785FED0121DDF32F00975192 /* main.m in Sources */,
 				785FED6121DDFE2400975192 /* LogUtilViewController.m in Sources */,
-				785FED3921DDF71200975192 /* DemoBarButtonItemFactory.m in Sources */,
 				785FED4721DDF76300975192 /* AppDelegate+WindowRootViewController.m in Sources */,
 				785FECF321DDF32D00975192 /* AppDelegate.m in Sources */,
-				785FED3F21DDF71200975192 /* DemoButtonFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,7 @@
 @interface CJLogView () {
     
 }
-@property (nonatomic, weak) UITextView *textView;
+@property (nonatomic, strong) UITextView *textView;
 @property (atomic, strong) NSMutableArray<CJLogModel *> *logs;
 
 @end
@@ -25,6 +25,7 @@
     if (self) {
         [self setupViews];
         self.logs = [NSMutableArray array];
+        _maxShowingLogCount = 20;
     }
     return self;
 }
@@ -105,7 +106,7 @@
         }
         
         [self.logs addObject:logModel];
-        if (self.logs.count > 20) { //最多显示20条数据
+        if (self.logs.count > self.maxShowingLogCount) { //默认最多显示20条数据
             [self.logs removeObjectAtIndex:0];
         }
         

@@ -15,6 +15,7 @@
 @interface CJLogView : UIView {
     
 }
+@property (nonatomic, assign) NSInteger maxShowingLogCount; /** 视图上最多显示的log个数(默认20条，超过的时候第一条会被清掉) */
 
 /**
  *  将appendObject追加写入视图

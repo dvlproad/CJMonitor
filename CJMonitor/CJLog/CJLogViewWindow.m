@@ -74,9 +74,12 @@ static CJLogViewWindow __strong *_sharedInstance = nil;
     self.userInteractionEnabled = NO; //设为NO，使屏幕触摸事件会传递到下层的实际 view 上去，不会挡住测试的操作
     
     CJLogView *logView = [[CJLogView alloc] initWithFrame:CGRectZero];
+    logView.maxShowingLogCount = 20;
     [self addSubview:logView];
     [logView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(self);
+        make.left.right.mas_equalTo(self);
+        make.top.mas_equalTo(self);
+        make.bottom.mas_equalTo(self).mas_offset(-[self __screenBottomHeight]);
     }];
     self.logView = logView;
 }
@@ -95,6 +98,16 @@ static CJLogViewWindow __strong *_sharedInstance = nil;
 ///清空测试窗口
 - (void)clear {
     [self.logView clear];
+}
+
+
+#pragma mark - Private Method
+/// 获取在各个设备上的屏幕底部不可用的高度
+- (CGFloat)__screenBottomHeight {
+    CGFloat screenHeight = [[UIScreen mainScreen] bounds].size.height;
+    BOOL isScreenFull = screenHeight >= 812 && UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone;  // 是否是全面屏
+    CGFloat screenBottomHeight = isScreenFull ?  34.0 : 0.0;    // 屏幕底部
+    return screenBottomHeight;
 }
 
 @end
