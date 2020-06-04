@@ -11,6 +11,7 @@
 //Log
 #import "LogUtilViewController.h"
 #import "LogViewViewController.h"
+#import "LogWindowViewController.h"
 #import "LogSuspendWindowViewController.h"
 
 
@@ -35,14 +36,18 @@
             CJModuleModel *toastUtilModule = [[CJModuleModel alloc] init];
             toastUtilModule.title = @"LogUtil(输入、输出)";
             toastUtilModule.classEntry = [LogUtilViewController class];
-            toastUtilModule.isCreateByXib = YES;
             [sectionDataModel.values addObject:toastUtilModule];
         }
         {
             CJModuleModel *toastUtilModule = [[CJModuleModel alloc] init];
             toastUtilModule.title = @"LogView(Log视图)";
             toastUtilModule.classEntry = [LogViewViewController class];
-            toastUtilModule.isCreateByXib = YES;
+            [sectionDataModel.values addObject:toastUtilModule];
+        }
+        {
+            CJModuleModel *toastUtilModule = [[CJModuleModel alloc] init];
+            toastUtilModule.title = @"LogWindow(Log窗口)";
+            toastUtilModule.classEntry = [LogWindowViewController class];
             [sectionDataModel.values addObject:toastUtilModule];
         }
         {

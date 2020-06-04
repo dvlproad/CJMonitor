@@ -7,9 +7,9 @@
 //
 
 #import "LogViewViewController.h"
-
-#import "CJLogView.h"
-//#import "UIView+CJPopupInSuspendWindow.h"
+#import <CQDemoKit/CQTSContainerViewFactory.h>
+#import <CQDemoKit/CQTSSwitchViewFactory.h>
+#import <CJMonitor/CJLogView.h>
 
 @interface LogViewViewController () {
     
@@ -27,6 +27,36 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    
+    // buttonsView
+    UIView *buttonsView = [CQTSContainerViewFactory threeButtonsViewAlongAxis:MASAxisTypeVertical title1:@"appendLog" actionBlock1:^(UIButton * _Nonnull bButton) {
+         [self.logView appendObject:@"this is a test log"];
+        
+    } title2:@"removeLogFile" actionBlock2:^(UIButton * _Nonnull bButton) {
+        [self.logView clear];
+    } title3:@"removeLogDirectory" actionBlock3:^(UIButton * _Nonnull bButton) {
+        
+    }];
+    [self.view addSubview:buttonsView];
+    [buttonsView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.view).mas_offset(120);
+        make.height.mas_equalTo(44*3+10*2);
+        make.centerX.mas_equalTo(self.view);
+        make.left.mas_equalTo(self.view).mas_offset(20);
+    }];
+    
+    // switchView
+    UIView *switchView = [CQTSSwitchViewFactory switchViewWithTitle:@"悬浮window是否可操作" switchOn:NO switchValueChangedBlock:^(UISwitch * _Nonnull bSwitch) {
+        self.suspendWindow.userInteractionEnabled = bSwitch.on; //如果为NO，则屏幕触摸事件会传递到下层的实际 view 上去，即不会挡住测试的操作
+    }];
+    [self.view addSubview:switchView];
+    [switchView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(buttonsView.mas_bottom).mas_offset(40);
+        make.left.right.mas_equalTo(self.view);
+        make.height.mas_equalTo(44);
+    }];
+    
+    
     //suspendWindow
     CGFloat width = CGRectGetWidth([UIScreen mainScreen].bounds);
     CGFloat height = CGRectGetHeight([UIScreen mainScreen].bounds);
@@ -41,23 +71,24 @@
     
     //logView
     CJLogView *logView = [[CJLogView alloc] initWithFrame:CGRectZero];
-    logView.backgroundColor = [UIColor lightGrayColor];
-    CGRect viewFrame = CGRectMake(0, 0, CGRectGetWidth(suspendWindowFrame), CGRectGetHeight(suspendWindowFrame));
-    [logView setFrame:viewFrame];
+    logView.backgroundColor = [UIColor redColor];
     [suspendWindow addSubview:logView];
+    [logView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.mas_equalTo(suspendWindow);
+        make.top.mas_equalTo(suspendWindow);
+        make.bottom.mas_equalTo(suspendWindow).mas_offset(-[self __screenBottomHeight]);
+    }];
+    
     self.logView = logView;
 }
 
-- (IBAction)appendLog:(id)sender {
-    [self.logView appendObject:@"this is a test log"];
-}
-
-- (IBAction)removeLogFile:(id)sender {
-    [self.logView clear];
-}
-
-- (IBAction)removeLogDirectory:(id)sender {
-    
+#pragma mark - Private Method
+/// 获取在各个设备上的屏幕底部不可用的高度
+- (CGFloat)__screenBottomHeight {
+    CGFloat screenHeight = [[UIScreen mainScreen] bounds].size.height;
+    BOOL isScreenFull = screenHeight >= 812 && UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone;  // 是否是全面屏
+    CGFloat screenBottomHeight = isScreenFull ?  34.0 : 0.0;    // 屏幕底部
+    return screenBottomHeight;
 }
 
 

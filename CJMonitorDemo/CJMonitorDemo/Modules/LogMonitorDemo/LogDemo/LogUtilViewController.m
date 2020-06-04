@@ -7,7 +7,8 @@
 //
 
 #import "LogUtilViewController.h"
-#import "CJLogUtil.h"
+#import <CQDemoKit/CQTSContainerViewFactory.h>
+#import <CJMonitor/CJLogUtil.h>
 
 @interface LogUtilViewController () {
     
@@ -33,27 +34,33 @@
         make.left.mas_equalTo(self.view).mas_offset(20);
         make.right.mas_equalTo(self.view).mas_offset(-20);
         make.top.mas_equalTo(self.view).mas_offset(100);
-        make.height.mas_equalTo(80);
+        make.height.mas_equalTo(120);
     }];
     NSString *text = @"请进入控制台上打印的NSHomeDirectory()，查看NSDocumentDirectory文件夹下的CJLog文件夹";
     testLabel.text = text;
     
     NSString *homeDirectory = NSHomeDirectory();
     NSLog(@"homeDirectory = %@", homeDirectory);
+    
+    
+    
+    // buttonsView
+    UIView *buttonsView = [CQTSContainerViewFactory threeButtonsViewAlongAxis:MASAxisTypeVertical title1:@"appendLog" actionBlock1:^(UIButton * _Nonnull bButton) {
+         [CJLogUtil cj_appendObject:@"this is a test log" toLogFileName:@"testLog.txt"];
+        
+    } title2:@"removeLogFile" actionBlock2:^(UIButton * _Nonnull bButton) {
+        [CJLogUtil cj_removeLogFileName:@"testLog.txt"];
+    } title3:@"removeLogDirectory" actionBlock3:^(UIButton * _Nonnull bButton) {
+        [CJLogUtil cj_removeLogDirectory];
+    }];
+    [self.view addSubview:buttonsView];
+    [buttonsView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(testLabel.mas_bottom).mas_offset(20);
+        make.height.mas_equalTo(44*3+10*2);
+        make.centerX.mas_equalTo(self.view);
+        make.left.mas_equalTo(self.view).mas_offset(20);
+    }];
 }
-
-- (IBAction)appendLog:(id)sender {
-    [CJLogUtil cj_appendObject:@"this is a test log" toLogFileName:@"testLog.txt"];
-}
-
-- (IBAction)removeLogFile:(id)sender {
-    [CJLogUtil cj_removeLogFileName:@"testLog.txt"];
-}
-
-- (IBAction)removeLogDirectory:(id)sender {
-    [CJLogUtil cj_removeLogDirectory];
-}
-
 
 
 - (void)didReceiveMemoryWarning {

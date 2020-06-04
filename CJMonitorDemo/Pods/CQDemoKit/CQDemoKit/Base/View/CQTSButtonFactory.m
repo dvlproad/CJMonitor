@@ -7,6 +7,7 @@
 //
 
 #import "CQTSButtonFactory.h"
+#import "UIButton+CQTSMoreProperty.h"
 
 @interface CQTSButtonFactory () {
     
@@ -95,6 +96,19 @@
     return button;
 }
 
+
+/// 按钮
++ (UIButton *)themeBGButtonWithTitle:(NSString *)title
+                         actionBlock:(void(^)(UIButton *bButton))actionBlock
+{
+    UIButton *button = [CQTSButtonFactory themeBGButton];
+    [button setTitle:title forState:UIControlStateNormal];
+    button.cqtsTouchUpInsideBlock = ^(UIButton *bButton) {
+        !actionBlock ?: actionBlock(bButton);
+    };
+    
+    return button;
+}
 
 
 /// 使用颜色构建的背景图片

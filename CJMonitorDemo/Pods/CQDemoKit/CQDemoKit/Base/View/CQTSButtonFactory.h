@@ -20,6 +20,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIButton *)themeBorderButton;
 
 
+/// 按钮
++ (UIButton *)themeBGButtonWithTitle:(NSString *)title
+                         actionBlock:(void(^)(UIButton *bButton))actionBlock;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
