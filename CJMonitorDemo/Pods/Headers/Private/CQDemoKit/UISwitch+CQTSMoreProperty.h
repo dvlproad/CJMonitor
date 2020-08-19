@@ -1,1 +1,1 @@
-../../../CQDemoKit/CQDemoKit/Base/View/UISwitch+CQTSMoreProperty.h
+../../../CQDemoKit/CQDemoKit/BaseUIKit/UISwitch+CQTSMoreProperty.h

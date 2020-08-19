@@ -29,21 +29,19 @@ target 'CJMonitorDemo' do
     pod 'CJBaseUIKit',  :subspecs => ['UIColor', 'UIButton', 'UITextField']
     pod 'CJFoundation', :subspecs => ['NSString']
     pod 'CJBaseUtil',   :subspecs => ['CJDataUtil']
-    pod 'CQDemoKit',    '~> 0.4.0',      :subspecs => ['Home_Base']
-    
-    pod 'IQKeyboardManager'
-    pod 'DZNEmptyDataSet'
-    
-    pod 'CJMonitor',        :path => '../’
+    pod 'CQDemoKit',    '~> 0.5.2',      :subspecs => ['BaseVC', 'BaseUIKit']
+
+    pod 'CJMonitor',    :path => '../’
+    pod 'QQ_MTA',       :subspecs => ['AutoTrack']
 end
 
 target 'CJMonitorDemoTests' do
     platform :ios, '9.0'
     #pod 'OCMock', '~> 3.4.1'
-    pod 'CJBaseTest/Test'
+    #pod 'CJBaseTest/Test'
 end
 
 target 'CJMonitorDemoUITests' do
     platform :ios, '9.0'
-    pod 'CJBaseTest/UITest'
+    #pod 'CJBaseTest/UITest'
 end

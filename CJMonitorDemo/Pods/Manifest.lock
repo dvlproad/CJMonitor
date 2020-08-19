@@ -1,6 +1,4 @@
 PODS:
-  - CJBaseTest/Test (0.0.1)
-  - CJBaseTest/UITest (0.0.1)
   - CJBaseUIKit/UIButton (0.6.0)
   - CJBaseUIKit/UIColor (0.6.0)
   - CJBaseUIKit/UITextField (0.6.0):
@@ -14,52 +12,67 @@ PODS:
   - CJMonitor/CJLog (0.0.1):
     - CJBaseUIKit/UIView/CJDragAction
     - Masonry
-  - CQDemoKit/Home_Base (0.4.0):
-    - CJBaseUtil/CJDataUtil
+  - CQDemoKit/BaseUIKit (0.5.2):
     - Masonry
-  - DZNEmptyDataSet (1.8.1)
-  - IQKeyboardManager (6.5.5)
+  - CQDemoKit/BaseUtil (0.5.2)
+  - CQDemoKit/BaseVC (0.5.2):
+    - CQDemoKit/BaseVC/Base (= 0.5.2)
+    - CQDemoKit/BaseVC/Collection (= 0.5.2)
+    - CQDemoKit/BaseVC/ScrollView (= 0.5.2)
+    - CQDemoKit/BaseVC/TableView (= 0.5.2)
+    - CQDemoKit/BaseVC/TextView (= 0.5.2)
+  - CQDemoKit/BaseVC/Base (0.5.2):
+    - Masonry
+  - CQDemoKit/BaseVC/Collection (0.5.2):
+    - CJBaseUtil/CJDataUtil
+    - CQDemoKit/BaseVC/Base
+  - CQDemoKit/BaseVC/ScrollView (0.5.2):
+    - CQDemoKit/BaseVC/Base
+  - CQDemoKit/BaseVC/TableView (0.5.2):
+    - CJBaseUtil/CJDataUtil
+    - CQDemoKit/BaseVC/Base
+  - CQDemoKit/BaseVC/TextView (0.5.2):
+    - CJBaseUtil/CJDataUtil
+    - CQDemoKit/BaseUtil
+    - CQDemoKit/BaseVC/Base
   - Masonry (1.1.0)
+  - QQ_MTA/AutoTrack (2.6.0):
+    - QQ_MTA/BasicAnalysis
+  - QQ_MTA/BasicAnalysis (2.6.0)
 
 DEPENDENCIES:
-  - CJBaseTest/Test
-  - CJBaseTest/UITest
   - CJBaseUIKit/UIButton
   - CJBaseUIKit/UIColor
   - CJBaseUIKit/UITextField
   - CJBaseUtil/CJDataUtil
   - CJFoundation/NSString
   - CJMonitor (from `../`)
-  - CQDemoKit/Home_Base (~> 0.4.0)
-  - DZNEmptyDataSet
-  - IQKeyboardManager
+  - CQDemoKit/BaseUIKit (~> 0.5.2)
+  - CQDemoKit/BaseVC (~> 0.5.2)
+  - QQ_MTA/AutoTrack
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - CJBaseTest
     - CJBaseUIKit
     - CJBaseUtil
     - CJFoundation
     - CQDemoKit
-    - DZNEmptyDataSet
-    - IQKeyboardManager
     - Masonry
+    - QQ_MTA
 
 EXTERNAL SOURCES:
   CJMonitor:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CJBaseTest: d54c1d1a0ee98d7200039fc7bed6f6c9be53c8bb
   CJBaseUIKit: d4945467678c73b872c7ddfb5367d4063ff28add
   CJBaseUtil: 1bbf8d5f831dc12ae4bb06c8b5326bd39f3522e1
   CJFoundation: 53b4df7152c6d6fd776f55f387c67f431b8574bd
   CJMonitor: 9f770c8334f07f237281775b50f0597e5c50b3a0
-  CQDemoKit: 85bdf8abb83cc62c2746679107603a326215cf09
-  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
-  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  CQDemoKit: 94f6c3052a056481c0d79e2db5d50130d9e99a91
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  QQ_MTA: d807ed41cc015dec816edf8d0e198ae47a1b5b2e
 
-PODFILE CHECKSUM: 3527363c94f9b1b52912acd29c2630fea6b2d88f
+PODFILE CHECKSUM: 187906ab34abc1db41f54d75364434d15ff26d86
 
 COCOAPODS: 1.9.3

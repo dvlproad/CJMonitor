@@ -10,6 +10,8 @@
 #import "AppDelegate+WindowRootViewController.h"
 
 #import <CJMonitor/CJLogUtil.h>
+#import <QQ_MTA/MTA.h>
+#import <QQ_MTA/MTAAutoTrack.h>
 
 @interface AppDelegate ()
 
@@ -24,6 +26,8 @@
     CJLog(@"测试环境写过log");
     CJAppLog(CJAppLogTypeDEBUG, @"0", @"测试环境写过log");
     
+    [MTA startWithAppkey:@"IR56BFVRH43Q"];
+    
     // 设置主窗口,并设置根控制器
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [self getMainRootViewController];
@@ -32,6 +36,14 @@
     return YES;
 }
 
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    // 可视化埋点代码
+    if ([MTAAutoTrack handleAutoTrackURL:url])
+        return YES;
+    // 原有代码
+    // ...
+    return NO;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
