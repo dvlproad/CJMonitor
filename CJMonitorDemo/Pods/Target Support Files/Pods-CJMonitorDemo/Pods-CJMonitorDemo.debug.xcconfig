@@ -1,10 +1,12 @@
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CJBaseUIKit" "${PODS_ROOT}/Headers/Public/CJBaseUtil" "${PODS_ROOT}/Headers/Public/CJFoundation" "${PODS_ROOT}/Headers/Public/CJMonitor" "${PODS_ROOT}/Headers/Public/CQDemoKit" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/QQ_MTA"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CJBaseUIKit" "${PODS_CONFIGURATION_BUILD_DIR}/CJBaseUtil" "${PODS_CONFIGURATION_BUILD_DIR}/CJFoundation" "${PODS_CONFIGURATION_BUILD_DIR}/CJMonitor" "${PODS_CONFIGURATION_BUILD_DIR}/CQDemoKit" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_ROOT}/QQ_MTA/MTA" "${PODS_ROOT}/QQ_MTA/MTA/plugin/autotrack"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/CJBaseUIKit" -isystem "${PODS_ROOT}/Headers/Public/CJBaseUtil" -isystem "${PODS_ROOT}/Headers/Public/CJFoundation" -isystem "${PODS_ROOT}/Headers/Public/CJMonitor" -isystem "${PODS_ROOT}/Headers/Public/Masonry" -isystem "${PODS_ROOT}/Headers/Public/CQDemoKit" -isystem "${PODS_ROOT}/Headers/Public/QQ_MTA"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"CJBaseUIKit" -l"CJBaseUtil" -l"CJFoundation" -l"CJMonitor" -l"CQDemoKit" -l"Masonry" -l"autotrack" -l"mtasdk" -l"sqlite3" -l"z" -framework "CFNetwork" -framework "CoreTelephony" -framework "Foundation" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CJBaseUIKit" "${PODS_ROOT}/Headers/Public/CJGRKit" "${PODS_ROOT}/Headers/Public/CJMonitor" "${PODS_ROOT}/Headers/Public/CQDemoKit" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/QQ_MTA"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CJBaseUIKit" "${PODS_CONFIGURATION_BUILD_DIR}/CJGRKit" "${PODS_CONFIGURATION_BUILD_DIR}/CJMonitor" "${PODS_CONFIGURATION_BUILD_DIR}/CQDemoKit" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_ROOT}/QQ_MTA/MTA" "${PODS_ROOT}/QQ_MTA/MTA/plugin/autotrack"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/CJBaseUIKit" -isystem "${PODS_ROOT}/Headers/Public/CJGRKit" -isystem "${PODS_ROOT}/Headers/Public/CJMonitor" -isystem "${PODS_ROOT}/Headers/Public/Masonry" -isystem "${PODS_ROOT}/Headers/Public/CQDemoKit" -isystem "${PODS_ROOT}/Headers/Public/QQ_MTA"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"CJBaseUIKit" -l"CJGRKit" -l"CJMonitor" -l"CQDemoKit" -l"Masonry" -l"autotrack" -l"mtasdk" -l"sqlite3" -l"z" -framework "CFNetwork" -framework "CoreTelephony" -framework "Foundation" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
 USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

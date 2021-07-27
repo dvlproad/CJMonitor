@@ -1,61 +1,61 @@
 PODS:
-  - CJBaseUIKit/UIButton (0.6.0)
-  - CJBaseUIKit/UIColor (0.6.0)
-  - CJBaseUIKit/UITextField (0.6.0):
-    - CJBaseUIKit/UIView/CJPopupAction
-  - CJBaseUIKit/UIView/CJDragAction (0.6.0)
-  - CJBaseUIKit/UIView/CJPopupAction (0.6.0)
-  - CJBaseUtil/CJDataUtil (0.5.1)
-  - CJFoundation/NSString (0.1.3)
+  - CJBaseUIKit/UIView/CJDragAction (0.8.0)
+  - CJGRKit/CGRectCJAdjustHelper (0.2.3)
+  - CJGRKit/Extension (0.2.3):
+    - CJGRKit/CGRectCJAdjustHelper
   - CJMonitor (0.0.1):
     - CJMonitor/CJLog (= 0.0.1)
   - CJMonitor/CJLog (0.0.1):
     - CJBaseUIKit/UIView/CJDragAction
+    - CJGRKit/Extension
     - Masonry
-  - CQDemoKit/BaseUIKit (0.5.2):
+  - CQDemoKit/BaseUIKit (0.6.2):
     - Masonry
-  - CQDemoKit/BaseUtil (0.5.2)
-  - CQDemoKit/BaseVC (0.5.2):
-    - CQDemoKit/BaseVC/Base (= 0.5.2)
-    - CQDemoKit/BaseVC/Collection (= 0.5.2)
-    - CQDemoKit/BaseVC/ScrollView (= 0.5.2)
-    - CQDemoKit/BaseVC/TableView (= 0.5.2)
-    - CQDemoKit/BaseVC/TextView (= 0.5.2)
-  - CQDemoKit/BaseVC/Base (0.5.2):
+  - CQDemoKit/BaseUtil (0.6.2)
+  - CQDemoKit/BaseVC (0.6.2):
+    - CQDemoKit/BaseVC/Base (= 0.6.2)
+    - CQDemoKit/BaseVC/Collection (= 0.6.2)
+    - CQDemoKit/BaseVC/ScrollView (= 0.6.2)
+    - CQDemoKit/BaseVC/TabBar (= 0.6.2)
+    - CQDemoKit/BaseVC/TableView (= 0.6.2)
+    - CQDemoKit/BaseVC/TextView (= 0.6.2)
+    - CQDemoKit/Helper
+  - CQDemoKit/BaseVC/Base (0.6.2):
+    - CQDemoKit/BaseUIKit
+    - CQDemoKit/Helper
     - Masonry
-  - CQDemoKit/BaseVC/Collection (0.5.2):
-    - CJBaseUtil/CJDataUtil
+  - CQDemoKit/BaseVC/Collection (0.6.2):
     - CQDemoKit/BaseVC/Base
-  - CQDemoKit/BaseVC/ScrollView (0.5.2):
+    - CQDemoKit/Helper
+  - CQDemoKit/BaseVC/ScrollView (0.6.2):
     - CQDemoKit/BaseVC/Base
-  - CQDemoKit/BaseVC/TableView (0.5.2):
-    - CJBaseUtil/CJDataUtil
+    - CQDemoKit/Helper
+  - CQDemoKit/BaseVC/TabBar (0.6.2):
+    - CQDemoKit/Helper
+  - CQDemoKit/BaseVC/TableView (0.6.2):
     - CQDemoKit/BaseVC/Base
-  - CQDemoKit/BaseVC/TextView (0.5.2):
-    - CJBaseUtil/CJDataUtil
+    - CQDemoKit/Helper
+  - CQDemoKit/BaseVC/TextView (0.6.2):
     - CQDemoKit/BaseUtil
     - CQDemoKit/BaseVC/Base
+    - CQDemoKit/Helper
+  - CQDemoKit/Helper (0.6.2)
   - Masonry (1.1.0)
   - QQ_MTA/AutoTrack (2.6.0):
     - QQ_MTA/BasicAnalysis
   - QQ_MTA/BasicAnalysis (2.6.0)
 
 DEPENDENCIES:
-  - CJBaseUIKit/UIButton
-  - CJBaseUIKit/UIColor
-  - CJBaseUIKit/UITextField
-  - CJBaseUtil/CJDataUtil
-  - CJFoundation/NSString
   - CJMonitor (from `../`)
-  - CQDemoKit/BaseUIKit (~> 0.5.2)
-  - CQDemoKit/BaseVC (~> 0.5.2)
+  - CQDemoKit/BaseUIKit (~> 0.6.2)
+  - CQDemoKit/BaseVC (~> 0.6.2)
   - QQ_MTA/AutoTrack
 
 SPEC REPOS:
+  https://gitee.com/dvlproad/dvlproadSpecs:
+    - CJGRKit
   https://github.com/CocoaPods/Specs.git:
     - CJBaseUIKit
-    - CJBaseUtil
-    - CJFoundation
     - CQDemoKit
     - Masonry
     - QQ_MTA
@@ -65,14 +65,13 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CJBaseUIKit: d4945467678c73b872c7ddfb5367d4063ff28add
-  CJBaseUtil: 1bbf8d5f831dc12ae4bb06c8b5326bd39f3522e1
-  CJFoundation: 53b4df7152c6d6fd776f55f387c67f431b8574bd
-  CJMonitor: 9f770c8334f07f237281775b50f0597e5c50b3a0
-  CQDemoKit: 94f6c3052a056481c0d79e2db5d50130d9e99a91
+  CJBaseUIKit: 1aae41e618536f39628c79a7461f48e6979b8a5e
+  CJGRKit: 2048e5c891cca01efb4bbb924f2a47a6a1e82115
+  CJMonitor: 855d722ebe9848b842b47d373311e65af82e72ff
+  CQDemoKit: f0fe8ab090a1ebd9f9526224c3abd384d7c4ebc0
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   QQ_MTA: d807ed41cc015dec816edf8d0e198ae47a1b5b2e
 
-PODFILE CHECKSUM: 187906ab34abc1db41f54d75364434d15ff26d86
+PODFILE CHECKSUM: 583b9903a6c91a990a41d2d7c2abe43f03c842a0
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

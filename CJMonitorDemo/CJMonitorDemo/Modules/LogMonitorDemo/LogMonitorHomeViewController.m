@@ -30,28 +30,28 @@
     NSMutableArray *sectionDataModels = [[NSMutableArray alloc] init];
     //Log
     {
-        CJSectionDataModel *sectionDataModel = [[CJSectionDataModel alloc] init];
+        CQDMSectionDataModel *sectionDataModel = [[CQDMSectionDataModel alloc] init];
         sectionDataModel.theme = @"日志(Log)相关";
         {
-            CJModuleModel *toastUtilModule = [[CJModuleModel alloc] init];
+            CQDMModuleModel *toastUtilModule = [[CQDMModuleModel alloc] init];
             toastUtilModule.title = @"LogUtil(输入、输出)";
             toastUtilModule.classEntry = [LogUtilViewController class];
             [sectionDataModel.values addObject:toastUtilModule];
         }
         {
-            CJModuleModel *toastUtilModule = [[CJModuleModel alloc] init];
+            CQDMModuleModel *toastUtilModule = [[CQDMModuleModel alloc] init];
             toastUtilModule.title = @"LogView(Log视图)";
             toastUtilModule.classEntry = [LogViewViewController class];
             [sectionDataModel.values addObject:toastUtilModule];
         }
         {
-            CJModuleModel *toastUtilModule = [[CJModuleModel alloc] init];
+            CQDMModuleModel *toastUtilModule = [[CQDMModuleModel alloc] init];
             toastUtilModule.title = @"LogWindow(Log窗口)";
             toastUtilModule.classEntry = [LogWindowViewController class];
             [sectionDataModel.values addObject:toastUtilModule];
         }
         {
-            CJModuleModel *toastUtilModule = [[CJModuleModel alloc] init];
+            CQDMModuleModel *toastUtilModule = [[CQDMModuleModel alloc] init];
             toastUtilModule.title = @"LogSuspendWindow(Log悬浮球)";
             toastUtilModule.classEntry = [LogSuspendWindowViewController class];
             [sectionDataModel.values addObject:toastUtilModule];

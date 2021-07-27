@@ -7,16 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Masonry/Masonry.h>
-
-#ifdef CJTESTPOD
-#import "UIView+CJDragAction.h"
-#import "UIView+CJKeepBounds.h"
-#else
-#import <CJBaseUIKit/UIView+CJDragAction.h>
-#import <CJBaseUIKit/UIView+CJKeepBounds.h>
-#endif
-
 #import "CJLogViewWindow.h"
 
 /**

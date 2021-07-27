@@ -7,6 +7,7 @@
 //
 
 #import "CJUIKitBaseHomeViewController.h"
+#import "CQTSSuspendWindowFactory.h"
 
 @interface CJUIKitBaseHomeViewController () <UITableViewDataSource, UITableViewDelegate> {
     
@@ -42,14 +43,14 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    CJSectionDataModel *sectionDataModel = [self.sectionDataModels objectAtIndex:section];
+    CQDMSectionDataModel *sectionDataModel = [self.sectionDataModels objectAtIndex:section];
     NSArray *dataModels = sectionDataModel.values;
     
     return dataModels.count;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    CJSectionDataModel *sectionDataModel = [self.sectionDataModels objectAtIndex:section];
+    CQDMSectionDataModel *sectionDataModel = [self.sectionDataModels objectAtIndex:section];
     
     NSString *indexTitle = sectionDataModel.theme;
     return indexTitle;
@@ -119,9 +120,9 @@
 */
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CJSectionDataModel *sectionDataModel = [self.sectionDataModels objectAtIndex:indexPath.section];
+    CQDMSectionDataModel *sectionDataModel = [self.sectionDataModels objectAtIndex:indexPath.section];
     NSArray *dataModels = sectionDataModel.values;
-    CJModuleModel *moduleModel = [dataModels objectAtIndex:indexPath.row];
+    CQDMModuleModel *moduleModel = [dataModels objectAtIndex:indexPath.row];
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (cell == nil) {
@@ -137,15 +138,15 @@
     //NSLog(@"didSelectRowAtIndexPath = %zd %zd", indexPath.section, indexPath.row);
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    CJSectionDataModel *sectionDataModel = [self.sectionDataModels objectAtIndex:indexPath.section];
+    CQDMSectionDataModel *sectionDataModel = [self.sectionDataModels objectAtIndex:indexPath.section];
     NSArray *dataModels = sectionDataModel.values;
-    CJModuleModel *moduleModel = [dataModels objectAtIndex:indexPath.row];
+    CQDMModuleModel *moduleModel = [dataModels objectAtIndex:indexPath.row];
     
     [self execModuleModel:moduleModel];
 }
 
 
-- (void)execModuleModel:(CJModuleModel *)moduleModel {
+- (void)execModuleModel:(CQDMModuleModel *)moduleModel {
     if (moduleModel.actionBlock) {
         moduleModel.actionBlock();
         
@@ -162,15 +163,31 @@
             
         } else {
             if (moduleModel.isCreateByXib) {
-                viewController = [[classEntry alloc] initWithNibName:clsString bundle:nil];
+                NSBundle *xibBundle = moduleModel.xibBundle;
+                viewController = [[classEntry alloc] initWithNibName:clsString bundle:xibBundle];
             } else {
                 viewController = [[classEntry alloc] init];
             }
         }
         
         viewController.title = NSLocalizedString(moduleModel.title, nil);
-        viewController.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:viewController animated:YES];
+        
+        // 如果是要跳到 UITabBarController 控制器
+        if ([viewController isKindOfClass:[UITabBarController class]]) {
+            [UIApplication sharedApplication].delegate.window.rootViewController = viewController;
+            
+            UIWindow *suspendButton = [CQTSSuspendWindowFactory showSuspendButtonWithSize:CGSizeMake(100, 44) title:NSLocalizedString(@"返回主页", nil) clickCompleteBlock:^{
+                   NSLog(@"");
+                UIViewController *originRootViewController = [[NSClassFromString(@"TSTabBarViewController") alloc] init];
+                [UIApplication sharedApplication].delegate.window.rootViewController = originRootViewController;
+           }];
+            
+        } else {
+            viewController.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:viewController animated:YES];
+        }
+        
+        
     }
 }
     

@@ -7,6 +7,10 @@
 //
 
 #import "CJLogSuspendWindow.h"
+#import <Masonry/Masonry.h>
+#import <CJBaseUIKit/UIView+CJDragAction.h>
+#import <CJGRKit/UIView+CJKeepBounds.h>
+
 
 @interface CJLogSuspendWindow () {
     

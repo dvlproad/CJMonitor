@@ -1,4 +1,4 @@
-platform :ios, '8.0'
+platform :ios, '9.0'
 #use_frameworks!
 inhibit_all_warnings!
 
@@ -26,10 +26,7 @@ source 'https://gitee.com/dvlproad/dvlproadSpecs'
 inhibit_all_warnings! #inhibit_warnings参数能够有效的抑制CocoaPods引入的第三方代码库产生的warning。
 
 target 'CJMonitorDemo' do
-    pod 'CJBaseUIKit',  :subspecs => ['UIColor', 'UIButton', 'UITextField']
-    pod 'CJFoundation', :subspecs => ['NSString']
-    pod 'CJBaseUtil',   :subspecs => ['CJDataUtil']
-    pod 'CQDemoKit',    '~> 0.5.2',      :subspecs => ['BaseVC', 'BaseUIKit']
+    pod 'CQDemoKit',    '~> 0.6.2',      :subspecs => ['BaseVC', 'BaseUIKit']
 
     pod 'CJMonitor',    :path => '../’
     pod 'QQ_MTA',       :subspecs => ['AutoTrack']

@@ -1,7 +1,9 @@
 Pod::Spec.new do |s|
-  #验证方法：pod lib lint CJMonitor.podspec --allow-warnings --use-libraries --verbose
+  #验证方法1：pod lib lint CJMonitor.podspec --sources='https://github.com/CocoaPods/Specs.git,https://gitee.com/dvlproad/dvlproadSpecs' --allow-warnings --use-libraries --verbose
+  #验证方法2：pod lib lint CJMonitor.podspec --sources=master,dvlproad --allow-warnings --use-libraries --verbose
+  #提交方法： pod repo push dvlproad CJMonitor.podspec --sources=master,dvlproad --allow-warnings --use-libraries --verbose
   s.name         = "CJMonitor"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "自定义的基础工具类"
   s.homepage     = "https://github.com/dvlproad/CJMonitor"
   s.license      = "MIT"
@@ -21,9 +23,9 @@ Pod::Spec.new do |s|
 
   # s.social_media_url   = "http://twitter.com/dvlproad"
 
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "9.0"
 
-  s.source       = { :git => "https://github.com/dvlproad/CJMonitor.git", :tag => "CJMonitor_0.0.1" }
+  s.source       = { :git => "https://github.com/dvlproad/CJMonitor.git", :tag => "CJMonitor_0.0.2" }
   # s.source_files  = "CJMonitor/*.{h,m}"
   # s.resources = "CJMonitor/**/*.{png}"
   s.frameworks = 'UIKit'
@@ -39,7 +41,8 @@ Pod::Spec.new do |s|
   s.subspec 'CJLog' do |ss|
     ss.source_files = "CJMonitor/CJLog/**/*.{h,m}"
     ss.dependency 'Masonry'
-    ss.dependency 'CJBaseUIKit/UIView/CJDragAction' #CJLogSuspendWindow用于控制log视图的弹出与隐藏的悬浮球需要依赖到
+    ss.dependency 'CJBaseUIKit/UIView/CJDragAction' # CJLogSuspendWindow.h 用于控制log视图的弹出与隐藏的悬浮球需要依赖到
+    ss.dependency 'CJGRKit/Extension'               # CJLogSuspendWindow.h 需要使用 #import <CJGRKit/UIView+CJKeepBounds.h>
   end
 
   # # 上次信息(账号安全)
