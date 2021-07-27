@@ -41,6 +41,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'CJLog' do |ss|
     ss.source_files = "CJMonitor/CJLog/**/*.{h,m}"
+    ss.dependency 'Masonry'
   end
 
   # # 上次信息(账号安全)
