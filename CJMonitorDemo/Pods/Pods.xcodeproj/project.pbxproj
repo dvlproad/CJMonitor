@@ -19,33 +19,32 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		04C3F8CFF387F73910013A4D9A98925A /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = F909DAC75E1FB9FF1D9B68B3C8A11E59 /* MASConstraintMaker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		05197E6638A72FE545839B5A636463E6 /* CJLogView.h in Headers */ = {isa = PBXBuildFile; fileRef = 35167CCB93E0D5A7F94DB372B6B6751F /* CJLogView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		05A8BE87A1DB8E27AB53A1B7D8F1A3A3 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B0B2EFC94C7AB8155781D330C4EE26F /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0641CE75CECFA28044CDE43F73700747 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313BEFEC1D79B570E0A5BF4E57D002 /* NSArray+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0777361E0D52CAD270F32A112CD0BAF3 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D71A248EE4B0650D3ECEE940CAFAA2A /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		01E70A37ACD0754F49A93800C917D592 /* CJLogSuspendWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A86685B2BFF91240D8ECF4EA9F4E552 /* CJLogSuspendWindow.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		07BF871C533C05ABAA664A2CA7A01D0C /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 058A4DE54AEDE083EE00972C11C3D09F /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		099C1CA8F4E4F4D8A6DF646483477C4B /* CJUIKitCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C97202E3F21A60F862CA900BE056C1B /* CJUIKitCollectionViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0B2E478CA4C1CEFF344F470B307BD0F6 /* CJMonitor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8666DF8E0709B1BA6C58F0C1A1C0287B /* CJMonitor-dummy.m */; };
 		0B84294AB5D34B9AF07C9800C306C836 /* CJGRKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FD1EC147990753C1AEC77C9F2FA4EF /* CJGRKit-dummy.m */; };
 		0CA7DD7C72049681F0A6B7995046383A /* CQDemoKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EA4B289DD39DDC0A69A028F767C57 /* CQDemoKit-dummy.m */; };
-		0DB3D15A5A705CFA5F3B921ACCA976F5 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 056C59CAADA6EC6A3FCE039A89E5C55A /* MASLayoutConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		100DEC70025E04A0B2D59B8034CBBC32 /* CJDealTextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CADB3288B5532CDAB6840A23BEA21C9 /* CJDealTextModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1051268F11F47B098D7AC3E7DC6D248E /* CJLogSuspendWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A86685B2BFF91240D8ECF4EA9F4E552 /* CJLogSuspendWindow.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		11D27773E570483632E028E08E38F89A /* UIView+CJDragAction.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DF7A607BBA65D8A53201C4966A7CBE /* UIView+CJDragAction.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		129B2FE71E558F4629D06E51964974A6 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C52D4641779281233C4FEF35F275B31E /* MASViewConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		136E2A0AF4A5AD2850773C03037C5A53 /* UIView+CJPanAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 497043B0FB36E6DE06417E7643431031 /* UIView+CJPanAction.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1734C98A63481239FD388203046CC148 /* CJUIKitToastUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B55DE377D19D39EBCFBD8E88268C6F10 /* CJUIKitToastUtil.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		19F06D376D6601DB4BC09C5D553EF90E /* CQTSSwitchViewFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 6393DD92CE6237A360BCFE291D27FAD4 /* CQTSSwitchViewFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1AB04CFEDE059C19E4D6640AAC201FE0 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 14BACF4FB50D1234E36F4C58F3D41DA4 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1E0EB029AC985B41DDD33A5C2824509E /* CJUIKitCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F439E209751EBBB1F82E2C925896061 /* CJUIKitCollectionViewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2390386FE153CCC4330A6AA6C8402437 /* CJLogSuspendWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 76ACD723E99254464633CBA9F8524417 /* CJLogSuspendWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1EC283EDCDAB4A06C4307BE79CCBB0FB /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E4A452C0B6EA306EC89E022869EDCC8 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		24ACDB52E5E66FB9CC1BF1142D04D848 /* CJUIKitBaseScrollViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9041F0E9DDF27D7306791481C84DB7E5 /* CJUIKitBaseScrollViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		29269089ACC4490066A2F0DC0390BB6F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D2624E3F0AE2D874959D49C3BC8220 /* NSLayoutConstraint+MASDebugAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		288B77ECC19D600C477C51649BA199DE /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 02F5470EDFD388B20506108168528020 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2A5556281D436D6BA4B36D1FD77D0973 /* CJLogModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A6E4A1FECF42A1EC8D4BCDF88662B9 /* CJLogModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2D4EBEC73B4057574798CC1D402236F2 /* CJDealTextModelFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D032A1413DA1AD254B9B2B67016EEB37 /* CJDealTextModelFactory.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2E2D786CF1C8CC697D789B0E15D6E264 /* CQTSSuspendWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC3998038EEABA77B2F48676D521446 /* CQTSSuspendWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2F8DA83058EAD7D81B1F72D1C44CB267 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AEFB5C57104840CD836B0FD0105E46 /* MASCompositeConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3491B0DF873090975615260E2342E354 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313BEFEC1D79B570E0A5BF4E57D002 /* NSArray+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		351CB6702EFF461B685B1A7B784654E3 /* CGRectCJAdjustHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = CBCC8641BECD47B98756604E7C8B1C11 /* CGRectCJAdjustHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3561739573757FF363DDEA8297B2F379 /* CQDMModuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE1DB024C82C7B5989456128A8D4F2E /* CQDMModuleModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		36965AA11CEDDA6FF7515B6395900643 /* CQTSSwitchViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B2D0772CDCC68B9683C1091D0F9A6C /* CQTSSwitchViewFactory.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		389005D70D722A2AA5C3540CB34505FC /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B0B2EFC94C7AB8155781D330C4EE26F /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		39811FBAC6A91BA0C636C6AA87A14311 /* UIView+CJKeepBounds.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C6106EC76BC57B93A399FFA25F70D0F /* UIView+CJKeepBounds.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		39B9CE8F466839A24C34BF6A2E1773C6 /* CJLogUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A5E1A7DD72BF45800FDBC294A1A5F3D0 /* CJLogUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3DE6CA9EEFEA245FCA996435B6FEC02B /* CJUIKitBaseCollectionHomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FF83828288B8D279C28A7B3B92A2CCB /* CJUIKitBaseCollectionHomeViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3FD19541F89C0F959110BC95CE677BEC /* CJUIKitBaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5B4DE9BCD06B22A09B571476877C7 /* CJUIKitBaseTabBarViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		44208B94C1028898C5632116F579B236 /* CJUIKitBaseTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B1F1F3047ED5B6341264B0D9FCDC36 /* CJUIKitBaseTextViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -54,19 +53,16 @@
 		4A250241540729E2B55C6771D61E0E56 /* CJUIKitBaseCollectionHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAB49C24DE58EB47205040F6659A8F6 /* CJUIKitBaseCollectionHomeViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4B0FFFF16C5C62A5A8516F30C48BE565 /* Pods-CJMonitorDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3751D39FE033661200FC15314A1E7A /* Pods-CJMonitorDemo-dummy.m */; };
 		4B12CBA693B6C36E63D1E3B51B1D10AC /* UISwitch+CQTSMoreProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = D29A5D0BAFBD5DEE272B4A29105F830E /* UISwitch+CQTSMoreProperty.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4E576689613758EEDB27E94CF225D7A5 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A5E5AE316F76B50A9A66BAB3E7A65ECD /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4EBA994DBDEB0127101AC52D55442986 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E35696B812250515B1F82E69F6F5E81 /* MASConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4FB6DE15F33C7D18362A41AAC0007CCE /* UIButton+CQTSMoreProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CACF8805ED93F902B3F5D9B1A7E8B9C /* UIButton+CQTSMoreProperty.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5073B8D3D5331FBC22C06358E50E651C /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = ED88BBBC804E42DEE37FCF9C7774BBFE /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		50D18EE2C3B7106ED45F9FCDA035AC03 /* CQDMSectionDataModel+CJDealTextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD865DAC5C64A77C898284A79CC3CDC /* CQDMSectionDataModel+CJDealTextModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		544F21743DF2F5713E0D175CDA11F578 /* CQTSContainerViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 01198CBA2DEF0F16B4DF5327F42F8067 /* CQTSContainerViewFactory.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		55D0B81D242AF1EAA53FAC46A14D3557 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E2FCA49E15D26735AA45F48964CB35 /* MASViewAttribute.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		55326897093FE8AE2AE5A4DD715FEE25 /* CJLogViewWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C758E4067077FA51615A2AC5B27AF93 /* CJLogViewWindow.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5731A866DFDCFB1CD73500690A1F79CC /* CQDMModuleModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5F1D328C70FA3B72166CFD1BDCD707 /* CQDMModuleModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5C496ABFB8255939F35E266787399311 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 703FAD5296BE24BD3F8B79DD0EAE41AB /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5F8B5484117A70BCAADCFCB9A453F884 /* CJLogViewWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 5909A90F556912B8190359A1E7386D9E /* CJLogViewWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5F8DF51FB3635F3591ADF969C6254E19 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = F00673533ACAF6E5DE5B0EECC2379B2F /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		59CAF6B2D4430D22C0AB00D0CABFDF91 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 348B94EBDE00426D72B8C1102BBA062F /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5B7D0B8E414501B987F26441B12F2130 /* CJLogSuspendWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 76ACD723E99254464633CBA9F8524417 /* CJLogSuspendWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		628E05B4065D873C1BD88C8BEDEFC28B /* CQTSSuspendButtonRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F002F01E993B0EBD5670B30D15BA0F /* CQTSSuspendButtonRootViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		6373805C88C97A8993A3C969B863809A /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 348B94EBDE00426D72B8C1102BBA062F /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		63DF088643EA91920E839185B9C6CFC8 /* CJLogModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A6E4A1FECF42A1EC8D4BCDF88662B9 /* CJLogModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6DF4A827EDF3F2BD4410FABA9DA15FEB /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = F909DAC75E1FB9FF1D9B68B3C8A11E59 /* MASConstraintMaker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7135D2DEE5A3884127DDE025F8F59F39 /* CJUIKitBaseHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F406B3D8ED31A97DABB5408BFBD3ED87 /* CJUIKitBaseHomeViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		71F8BA53AF0DC0FA11B5A9A72AA4230C /* CJUIKitBaseBigTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D05E51DECB9FF95CC2946AF95341F7 /* CJUIKitBaseBigTextViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7240C9447319D53CF454CB3623855E7A /* CJValidateStringTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 484B19877D6D2325C5E8EF362CF35B8A /* CJValidateStringTableViewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -79,53 +75,57 @@
 		7B8B279B1CA47F9EA8A30C65E4F1B3BE /* CJUIKitBaseTextViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E0C875AC1DF304A6FA35315DF59AFB1E /* CJUIKitBaseTextViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7B8FD553CF517E56905171C3437B95FF /* CJUIKitBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A08404FFFC79703B9A1C28176738277 /* CJUIKitBaseViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7D242313DBEB7F73C0D976A4665F4926 /* Pods-CJMonitorDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EE2FB4612C36CFC7529E1733D1866C /* Pods-CJMonitorDemoUITests-dummy.m */; };
+		7D5A40043902BFE72CD45536215D14E8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D2624E3F0AE2D874959D49C3BC8220 /* NSLayoutConstraint+MASDebugAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		809D4E69A391E081683695D353E37766 /* CQDMSectionDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B08466ED06F236CD744576F40CA98AF1 /* CQDMSectionDataModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8343C79AB36C86DE75400E3CF2D70CB2 /* CJLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE90524BD70556DD02DF9A34E85002E /* CJLogView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8742C96038D2A03E224B4B0205719E8C /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E35696B812250515B1F82E69F6F5E81 /* MASConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		88B4CAABB96196F76CE8CD9F023AAC24 /* UIView+CJDragAction.h in Headers */ = {isa = PBXBuildFile; fileRef = D910C249A6B1FD0B135A4AD869E3A3EE /* UIView+CJDragAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A2F23190D3DB301AAE957FCCE3A4A93F /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 02F5470EDFD388B20506108168528020 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A4FB218C2C13A3D4AE1FE180B51EEB00 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 28B5DBA15D55C6EA7483DB5E595C0AE2 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A9417748250564007A911CBD9D86980E /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 058A4DE54AEDE083EE00972C11C3D09F /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AB0582151C5EA4AEA7C7F1532FEC8506 /* CJLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5887C86BF09179A44EB3A5C7B69428 /* CJLogModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8998796E7CD9950E284E6D6C6A365ABE /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 14BACF4FB50D1234E36F4C58F3D41DA4 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9071E6AAD564F5C5B93E57FD569F8A89 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = A091D523B35C4F9603D0FF78666D698E /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		99EE17B77B6CA725A8E26139B12F208D /* CJLogViewWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 5909A90F556912B8190359A1E7386D9E /* CJLogViewWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9AE158261F4AA0808CA5E5FA5D3FF095 /* CJLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5887C86BF09179A44EB3A5C7B69428 /* CJLogModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A553D6936B25A7236DB21EF8AAAD9195 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E2FCA49E15D26735AA45F48964CB35 /* MASViewAttribute.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B06A881036FADD668D5D26AF64C24BFD /* CJUIKitBaseBigTextViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 68358E3F626A934A01B565915FEAE59D /* CJUIKitBaseBigTextViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B1785DD03E490CD50E5F973425ABBC0A /* CJUIKitBaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9894721EB98941E7DA519196E7142320 /* CJUIKitBaseScrollViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		B205FC222F91EAF7CD5A280CBDDE91AE /* CJLogUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A5E1A7DD72BF45800FDBC294A1A5F3D0 /* CJLogUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B506B3AD5CFF3F570EB3E5D9C2F097C5 /* CJDealTextModelFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D072CE7D56B567FAC98C4CE68605AF9 /* CJDealTextModelFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B810355A075A49E5CC725A1F5492E2AD /* CJMonitor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8666DF8E0709B1BA6C58F0C1A1C0287B /* CJMonitor-dummy.m */; };
-		B87F89E9D18956FAFED8EFF28BAC7DFC /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = A091D523B35C4F9603D0FF78666D698E /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B761E1B942EFCFC7B12303304543729C /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 470ABBA6ED0375D00C308973FF053A45 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BA41F7090A063C575F4688CAA8AF1B29 /* CJUIKitBaseTabBarViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E407C4390546666787A2DA6B9AA9C5F6 /* CJUIKitBaseTabBarViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BA7821DCE3FEF65532D0BFD234BDD1B2 /* CGRectCJAdjustHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FA7D238FC799618E01777A997B1F76 /* CGRectCJAdjustHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BFEF1D8CF82271F5C05318B9302BA07A /* CQTSSuspendButtonRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F49576C4AB947B9BF15F139686834014 /* CQTSSuspendButtonRootViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C1268F5E11FE6A6C8230216A5DF143B5 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C52D4641779281233C4FEF35F275B31E /* MASViewConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C33A921B2A99620DDF49B5031E715CD8 /* UIButton+CQTSMoreProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 35018F5E1673455599F27020DD772826 /* UIButton+CQTSMoreProperty.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C3FF75FB7E37D4AB86082390F09F6C99 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A219A0FF300F0B7482728FDB5D7C6 /* ViewController+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C4704BFB5882E31A6FE4EB3121AB6175 /* CJValidateStringTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 21E243D86390B4D2859DCCE8DB2FE39D /* CJValidateStringTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C7369F5052A76B08D31173BB31A9938D /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AEFB5C57104840CD836B0FD0105E46 /* MASCompositeConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C6A0252F55B5DAB1A145F9FDEB8F867C /* CJLogView.h in Headers */ = {isa = PBXBuildFile; fileRef = 35167CCB93E0D5A7F94DB372B6B6751F /* CJLogView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CA9B2040A0133836C33AD7B0822F2326 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 703FAD5296BE24BD3F8B79DD0EAE41AB /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CB80F2C1DD7019CF43ADF7DDCA1B003F /* CJUIKitAlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C66405FEE922D9D77BA59CD45EA9EFF1 /* CJUIKitAlertUtil.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CDAAFFF9EB4CBCB8BA1CD12FFE40FCC9 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 470ABBA6ED0375D00C308973FF053A45 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CC62340E9DBEC066DD1ADA0BE9462AD1 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A5E5AE316F76B50A9A66BAB3E7A65ECD /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CEC6C3A97C6FAEDDA72CF2FE4384B3B3 /* CQDMSectionDataModel+CJDealTextModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FFA3581919D626A0F7AE2CF25CC2158 /* CQDMSectionDataModel+CJDealTextModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D2A1F53B797EF9CC490B51DFFE3E8646 /* CQTSBorderStateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 25154696506D01550A460CAA8BF35356 /* CQTSBorderStateButton.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D3557DA7E6FF3B8A02D1124A0A71AE1F /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F162D0BF4328A47647047FCD25197FB1 /* View+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D9F099831ADDD849367D4AF66BFE3913 /* CQTSSuspendWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 119928A9B806FF37BAD1C1D20B35CE41 /* CQTSSuspendWindow.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		DCE87A0C90E98A536852E4FE6C22BBE7 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E4A452C0B6EA306EC89E022869EDCC8 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DA474786B81A5FAEC885827CA71DAC9D /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 056C59CAADA6EC6A3FCE039A89E5C55A /* MASLayoutConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E064B77B2012EE15B47F55AF4ECBE395 /* CJUIKitAlertUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = CBCC7ACA6297050F8CD55C92611BC4F8 /* CJUIKitAlertUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E0908454E53FE60CAF6630F153A3B1A6 /* CQTSContainerViewFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 542C908DC3227AEEA83895700661188A /* CQTSContainerViewFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E0DCE480CE5667D0AECC08DDA9C513DA /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DAF495838CB4D2ACFA91BEEDFC0971 /* Masonry-dummy.m */; };
+		E1BCAF2ABAB3D6C37F00D6D3711CB5B1 /* CJLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE90524BD70556DD02DF9A34E85002E /* CJLogView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E3254A8420C35AE5AAE667470DBB4A85 /* CJValidateStringBigTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FB373D60E5CD950E472BEAA70330DF /* CJValidateStringBigTableViewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E35B18F3C68CF5322580BA66FD1C3D65 /* UIImage+CQDemoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7866B9E0C9C3C757F5C6D3EB828C5F4D /* UIImage+CQDemoKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E7D326E32827DE387627E654EF252B1A /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = ED88BBBC804E42DEE37FCF9C7774BBFE /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EB4F0A812AF22294C7A85E3228F5BD29 /* CJLogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C7764B4CD0F37FA6E78309F0199F /* CJLogUtil.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E3B229E7C4299FC8DB1387C278D6E083 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = F00673533ACAF6E5DE5B0EECC2379B2F /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E800E94C41F84B9B310FDBE1ABEBC8A5 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A219A0FF300F0B7482728FDB5D7C6 /* ViewController+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		EB947B49EEA9DEAF61FAF4C117565002 /* UISwitch+CQTSMoreProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 96A4E6A745EBF888AA50D2BE3198BCBE /* UISwitch+CQTSMoreProperty.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EBB208A80068563D8BB5FF63E953070D /* CJUIKitBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C1BE4C0CF82E37A65127709AF53DDD /* CJUIKitBaseViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		EE1F3C2574D86D80FE53394D4EA28D11 /* CJLogViewWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C758E4067077FA51615A2AC5B27AF93 /* CJLogViewWindow.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F007737C3C5621D1D64DFAD4CC87E32A /* CJDealTextModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 437B7D386592A7F60E402452EA2C00C0 /* CJDealTextModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F04542FFBD41909615F8FD7A13F39FAD /* CQTSSuspendWindowFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = FF02CEE66CAA1B9FF5E2E8F376F4E471 /* CQTSSuspendWindowFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F12D6C04108B907D4FD6C337CE739560 /* CQTSButtonFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D13D431FD662401E6D47B013BFF514C /* CQTSButtonFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F208853CB068C4A895B2FE575ADA1069 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D71A248EE4B0650D3ECEE940CAFAA2A /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F230651AA688822E164FB72EDA55F3C4 /* CJUIKitToastUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 05C2AED7F34F96142BD3F2DA6D18C260 /* CJUIKitToastUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F2E26FF19743194D4D6B0177A598BC30 /* CQDMTabBarModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D29E5556E9D27E141C0FC021426DFA9 /* CQDMTabBarModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F35EE9E93A622C986F9B98FE6CBCF8C3 /* UIView+CJKeepBounds.m in Sources */ = {isa = PBXBuildFile; fileRef = D65814440AB7C84A231F19D38E81DD35 /* UIView+CJKeepBounds.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F4093CCA9D960E6E6D9AC75A46620AD3 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DAF495838CB4D2ACFA91BEEDFC0971 /* Masonry-dummy.m */; };
 		F83F7E88B47CE82B610A837CD0EE482F /* CJUIKitBaseHomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB07D4729F9226C9E9AEED467565232 /* CJUIKitBaseHomeViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FC1D438FA8D585676DF00BED93D39D08 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F162D0BF4328A47647047FCD25197FB1 /* View+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F993BF282837C5BFBBFD6298CC9AB9DE /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 28B5DBA15D55C6EA7483DB5E595C0AE2 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FC2ECF5F0FA6EB6436B04F7533FC2B8D /* UIView+CJPanAction.h in Headers */ = {isa = PBXBuildFile; fileRef = C3907BB01A1A097166224C877D095774 /* UIView+CJPanAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FDB769E62E7B694F13E673497AD2E7C6 /* CQTSSuspendWindowFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0593EB4E7E8F400C7AA290917137E4 /* CQTSSuspendWindowFactory.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		FFDB413F10F70FCEB30498AE485CCF30 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A85DC7481452D15C5B93361A12023D /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FEA419AB24213471F878F158C77FE52A /* CJLogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D4C7764B4CD0F37FA6E78309F0199F /* CJLogUtil.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FFD5C0C2E58328D0179D194F6163FFA3 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = E2A85DC7481452D15C5B93361A12023D /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,28 +171,7 @@
 			remoteGlobalIDString = 8EAC078A06609A8FD16E6539DB497666;
 			remoteInfo = CJMonitor;
 		};
-		780F4DE3A6A69202F9BBAD5F5F12169C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 31936AD642017976266B9ED39110F157;
-			remoteInfo = CJBaseUIKit;
-		};
 		ABD41955A17860A43CE65E29C5BE40E0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
-			remoteInfo = Masonry;
-		};
-		F0D95DFA6E1FCC164DAF23C86E10AEB8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 674BF7868F6EF94F5348FA7AEEFEE7D3;
-			remoteInfo = CJGRKit;
-		};
-		F617432D95E38E285D872B7882DAABF8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -379,13 +358,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		50364FE8993D88A7EFC3E2C2D15BB4BB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		54C749EEA27A79DC80F05DA1530472C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,14 +379,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76E5306FDCED06BF6DD055F2A8367D7A /* Frameworks */ = {
+		8BF2475C0FBF3090FE594F0829B95105 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BF2475C0FBF3090FE594F0829B95105 /* Frameworks */ = {
+		AFC244032C33EC83DBC64688B67FA601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4DB86A79F4063E894B837B06B08D627 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -994,15 +973,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7380ED595C3432F55CBA88309D7B390E /* Headers */ = {
+		926048EA340F746BDD4E1E9711564A95 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63DF088643EA91920E839185B9C6CFC8 /* CJLogModel.h in Headers */,
-				2390386FE153CCC4330A6AA6C8402437 /* CJLogSuspendWindow.h in Headers */,
-				B205FC222F91EAF7CD5A280CBDDE91AE /* CJLogUtil.h in Headers */,
-				05197E6638A72FE545839B5A636463E6 /* CJLogView.h in Headers */,
-				5F8B5484117A70BCAADCFCB9A453F884 /* CJLogViewWindow.h in Headers */,
+				2A5556281D436D6BA4B36D1FD77D0973 /* CJLogModel.h in Headers */,
+				5B7D0B8E414501B987F26441B12F2130 /* CJLogSuspendWindow.h in Headers */,
+				39B9CE8F466839A24C34BF6A2E1773C6 /* CJLogUtil.h in Headers */,
+				C6A0252F55B5DAB1A145F9FDEB8F867C /* CJLogView.h in Headers */,
+				99EE17B77B6CA725A8E26139B12F208D /* CJLogViewWindow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1013,25 +992,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEEDF757EACD195EB1C72A0BC83C577F /* Headers */ = {
+		B1BF2E60BEB38F06DFC0A0C8925521A8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B87F89E9D18956FAFED8EFF28BAC7DFC /* MASCompositeConstraint.h in Headers */,
-				A2F23190D3DB301AAE957FCCE3A4A93F /* MASConstraint+Private.h in Headers */,
-				5F8DF51FB3635F3591ADF969C6254E19 /* MASConstraint.h in Headers */,
-				FFDB413F10F70FCEB30498AE485CCF30 /* MASConstraintMaker.h in Headers */,
-				CDAAFFF9EB4CBCB8BA1CD12FFE40FCC9 /* MASLayoutConstraint.h in Headers */,
-				E7D326E32827DE387627E654EF252B1A /* Masonry.h in Headers */,
-				05A8BE87A1DB8E27AB53A1B7D8F1A3A3 /* MASUtilities.h in Headers */,
-				1AB04CFEDE059C19E4D6640AAC201FE0 /* MASViewAttribute.h in Headers */,
-				A9417748250564007A911CBD9D86980E /* MASViewConstraint.h in Headers */,
-				6373805C88C97A8993A3C969B863809A /* NSArray+MASAdditions.h in Headers */,
-				5C496ABFB8255939F35E266787399311 /* NSArray+MASShorthandAdditions.h in Headers */,
-				0777361E0D52CAD270F32A112CD0BAF3 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
-				4E576689613758EEDB27E94CF225D7A5 /* View+MASAdditions.h in Headers */,
-				A4FB218C2C13A3D4AE1FE180B51EEB00 /* View+MASShorthandAdditions.h in Headers */,
-				DCE87A0C90E98A536852E4FE6C22BBE7 /* ViewController+MASAdditions.h in Headers */,
+				9071E6AAD564F5C5B93E57FD569F8A89 /* MASCompositeConstraint.h in Headers */,
+				288B77ECC19D600C477C51649BA199DE /* MASConstraint+Private.h in Headers */,
+				E3B229E7C4299FC8DB1387C278D6E083 /* MASConstraint.h in Headers */,
+				FFD5C0C2E58328D0179D194F6163FFA3 /* MASConstraintMaker.h in Headers */,
+				B761E1B942EFCFC7B12303304543729C /* MASLayoutConstraint.h in Headers */,
+				5073B8D3D5331FBC22C06358E50E651C /* Masonry.h in Headers */,
+				389005D70D722A2AA5C3540CB34505FC /* MASUtilities.h in Headers */,
+				8998796E7CD9950E284E6D6C6A365ABE /* MASViewAttribute.h in Headers */,
+				07BF871C533C05ABAA664A2CA7A01D0C /* MASViewConstraint.h in Headers */,
+				59CAF6B2D4430D22C0AB00D0CABFDF91 /* NSArray+MASAdditions.h in Headers */,
+				CA9B2040A0133836C33AD7B0822F2326 /* NSArray+MASShorthandAdditions.h in Headers */,
+				F208853CB068C4A895B2FE575ADA1069 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				CC62340E9DBEC066DD1ADA0BE9462AD1 /* View+MASAdditions.h in Headers */,
+				F993BF282837C5BFBBFD6298CC9AB9DE /* View+MASShorthandAdditions.h in Headers */,
+				1EC283EDCDAB4A06C4307BE79CCBB0FB /* ViewController+MASAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1083,11 +1062,11 @@
 		};
 		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 563B7B11AE8C8DDCE29E79F859C5D9C0 /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildConfigurationList = E431869FBB6337EAA28E5571E7DE5D2E /* Build configuration list for PBXNativeTarget "Masonry" */;
 			buildPhases = (
-				AEEDF757EACD195EB1C72A0BC83C577F /* Headers */,
-				2C4413172FCF41A161264D778CD96E77 /* Sources */,
-				76E5306FDCED06BF6DD055F2A8367D7A /* Frameworks */,
+				B1BF2E60BEB38F06DFC0A0C8925521A8 /* Headers */,
+				0EB45D5B23F2E475C78962C6D6FF0C36 /* Sources */,
+				AFC244032C33EC83DBC64688B67FA601 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1157,18 +1136,15 @@
 		};
 		8EAC078A06609A8FD16E6539DB497666 /* CJMonitor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB2E6B1A7375A406449D5202D6E40BD4 /* Build configuration list for PBXNativeTarget "CJMonitor" */;
+			buildConfigurationList = E920808C1E7E8A9F93F2BE2568FA18D2 /* Build configuration list for PBXNativeTarget "CJMonitor" */;
 			buildPhases = (
-				7380ED595C3432F55CBA88309D7B390E /* Headers */,
-				2DAD489260807E7ADE2548AB50170D50 /* Sources */,
-				50364FE8993D88A7EFC3E2C2D15BB4BB /* Frameworks */,
+				926048EA340F746BDD4E1E9711564A95 /* Headers */,
+				BB7F5E9B713817E57BC0F4FCB03F0FCB /* Sources */,
+				B4DB86A79F4063E894B837B06B08D627 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0CFE07A40AA8AB57BBA7F2C933A885CE /* PBXTargetDependency */,
-				335DD04E755045E3F1AC4B7B0DF15CFD /* PBXTargetDependency */,
-				3F9B58A1B97BC217C40C54CB8F003ADC /* PBXTargetDependency */,
 			);
 			name = CJMonitor;
 			productName = CJMonitor;
@@ -1237,6 +1213,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0EB45D5B23F2E475C78962C6D6FF0C36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F8DA83058EAD7D81B1F72D1C44CB267 /* MASCompositeConstraint.m in Sources */,
+				8742C96038D2A03E224B4B0205719E8C /* MASConstraint.m in Sources */,
+				6DF4A827EDF3F2BD4410FABA9DA15FEB /* MASConstraintMaker.m in Sources */,
+				DA474786B81A5FAEC885827CA71DAC9D /* MASLayoutConstraint.m in Sources */,
+				E0DCE480CE5667D0AECC08DDA9C513DA /* Masonry-dummy.m in Sources */,
+				A553D6936B25A7236DB21EF8AAAD9195 /* MASViewAttribute.m in Sources */,
+				C1268F5E11FE6A6C8230216A5DF143B5 /* MASViewConstraint.m in Sources */,
+				3491B0DF873090975615260E2342E354 /* NSArray+MASAdditions.m in Sources */,
+				7D5A40043902BFE72CD45536215D14E8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				D3557DA7E6FF3B8A02D1124A0A71AE1F /* View+MASAdditions.m in Sources */,
+				E800E94C41F84B9B310FDBE1ABEBC8A5 /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		253F8C642B3BB74480796A0E51FF200D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1270,37 +1264,6 @@
 				C33A921B2A99620DDF49B5031E715CD8 /* UIButton+CQTSMoreProperty.m in Sources */,
 				78081DB8D9B393F88FDB79EF14E40918 /* UIImage+CQDemoKit.m in Sources */,
 				4B12CBA693B6C36E63D1E3B51B1D10AC /* UISwitch+CQTSMoreProperty.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2C4413172FCF41A161264D778CD96E77 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C7369F5052A76B08D31173BB31A9938D /* MASCompositeConstraint.m in Sources */,
-				4EBA994DBDEB0127101AC52D55442986 /* MASConstraint.m in Sources */,
-				04C3F8CFF387F73910013A4D9A98925A /* MASConstraintMaker.m in Sources */,
-				0DB3D15A5A705CFA5F3B921ACCA976F5 /* MASLayoutConstraint.m in Sources */,
-				F4093CCA9D960E6E6D9AC75A46620AD3 /* Masonry-dummy.m in Sources */,
-				55D0B81D242AF1EAA53FAC46A14D3557 /* MASViewAttribute.m in Sources */,
-				129B2FE71E558F4629D06E51964974A6 /* MASViewConstraint.m in Sources */,
-				0641CE75CECFA28044CDE43F73700747 /* NSArray+MASAdditions.m in Sources */,
-				29269089ACC4490066A2F0DC0390BB6F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				FC1D438FA8D585676DF00BED93D39D08 /* View+MASAdditions.m in Sources */,
-				C3FF75FB7E37D4AB86082390F09F6C99 /* ViewController+MASAdditions.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2DAD489260807E7ADE2548AB50170D50 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB0582151C5EA4AEA7C7F1532FEC8506 /* CJLogModel.m in Sources */,
-				1051268F11F47B098D7AC3E7DC6D248E /* CJLogSuspendWindow.m in Sources */,
-				EB4F0A812AF22294C7A85E3228F5BD29 /* CJLogUtil.m in Sources */,
-				8343C79AB36C86DE75400E3CF2D70CB2 /* CJLogView.m in Sources */,
-				EE1F3C2574D86D80FE53394D4EA28D11 /* CJLogViewWindow.m in Sources */,
-				B810355A075A49E5CC725A1F5492E2AD /* CJMonitor-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1340,15 +1303,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB7F5E9B713817E57BC0F4FCB03F0FCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE158261F4AA0808CA5E5FA5D3FF095 /* CJLogModel.m in Sources */,
+				01E70A37ACD0754F49A93800C917D592 /* CJLogSuspendWindow.m in Sources */,
+				FEA419AB24213471F878F158C77FE52A /* CJLogUtil.m in Sources */,
+				E1BCAF2ABAB3D6C37F00D6D3711CB5B1 /* CJLogView.m in Sources */,
+				55326897093FE8AE2AE5A4DD715FEE25 /* CJLogViewWindow.m in Sources */,
+				0B2E478CA4C1CEFF344F470B307BD0F6 /* CJMonitor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0CFE07A40AA8AB57BBA7F2C933A885CE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CJBaseUIKit;
-			target = 31936AD642017976266B9ED39110F157 /* CJBaseUIKit */;
-			targetProxy = 780F4DE3A6A69202F9BBAD5F5F12169C /* PBXContainerItemProxy */;
-		};
 		0F6114653B9609C4EAB99E4E3A6A6AE1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CJBaseUIKit;
@@ -1367,23 +1337,11 @@
 			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
 			targetProxy = 38BA61EF99AFDF0B94BD239C6D6F6821 /* PBXContainerItemProxy */;
 		};
-		335DD04E755045E3F1AC4B7B0DF15CFD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CJGRKit;
-			target = 674BF7868F6EF94F5348FA7AEEFEE7D3 /* CJGRKit */;
-			targetProxy = F0D95DFA6E1FCC164DAF23C86E10AEB8 /* PBXContainerItemProxy */;
-		};
 		348CBAEAFD88C57D0E4CCD9757B8676A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CQDemoKit;
 			target = AC509E0B2457961842D06F82D4E8C691 /* CQDemoKit */;
 			targetProxy = 4068FFA55BF051F76C2364B39DEAE341 /* PBXContainerItemProxy */;
-		};
-		3F9B58A1B97BC217C40C54CB8F003ADC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Masonry;
-			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = F617432D95E38E285D872B7882DAABF8 /* PBXContainerItemProxy */;
 		};
 		64EEF8576429395D42C2AC40C772A506 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1532,6 +1490,28 @@
 			};
 			name = Debug;
 		};
+		2999E483306D4CDAA32C050546E384F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D9D5719F49BC27E46120DE19D8387FF /* Masonry.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		2CA48E521B3F9BCBEFE29EA3A7DAB9BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00DEDF970E643B87DC3C58615FC61E8A /* CQDemoKit.debug.xcconfig */;
@@ -1546,28 +1526,6 @@
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = CQDemoKit;
 				PRODUCT_NAME = CQDemoKit;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		2DC260CD731DB0D2BE8B992C6F10C6E3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D9D5719F49BC27E46120DE19D8387FF /* Masonry.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = Masonry;
-				PRODUCT_NAME = Masonry;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1617,29 +1575,6 @@
 			};
 			name = Release;
 		};
-		3DDE0C35F836232E860A06F20FE22363 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B144D695C9CC8DEBA6EBFEB4F641791A /* Masonry.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = Masonry;
-				PRODUCT_NAME = Masonry;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		3F8F75C0A614A68842D6E118E6A641A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D805CCF5C21AC4E340E0FD6B6640B21 /* CQDemoKit.release.xcconfig */;
@@ -1654,6 +1589,29 @@
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = CQDemoKit;
 				PRODUCT_NAME = CQDemoKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DD9E0506655D6F3F7716A991999C8AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3384A6048A892D75C708B0B2B7EF416E /* CJMonitor.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CJMonitor/CJMonitor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = CJMonitor;
+				PRODUCT_NAME = CJMonitor;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1700,9 +1658,9 @@
 			};
 			name = Release;
 		};
-		A1D0391062B234D2497DDDF5A8462A46 /* Release */ = {
+		8A89871E123087AB9CD90D0146260668 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3384A6048A892D75C708B0B2B7EF416E /* CJMonitor.release.xcconfig */;
+			baseConfigurationReference = AD5031AB868A0ED477DA089BE7ED62D2 /* CJMonitor.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1714,6 +1672,28 @@
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = CJMonitor;
 				PRODUCT_NAME = CJMonitor;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97582F1424D659A36E2A1C0779089907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B144D695C9CC8DEBA6EBFEB4F641791A /* Masonry.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1893,28 +1873,6 @@
 			};
 			name = Release;
 		};
-		EE39D112141A5E2DCAA73A49843F821E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD5031AB868A0ED477DA089BE7ED62D2 /* CJMonitor.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/CJMonitor/CJMonitor-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = CJMonitor;
-				PRODUCT_NAME = CJMonitor;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1954,15 +1912,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		563B7B11AE8C8DDCE29E79F859C5D9C0 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2DC260CD731DB0D2BE8B992C6F10C6E3 /* Debug */,
-				3DDE0C35F836232E860A06F20FE22363 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		7025E205C064967DC27A0B696655F37B /* Build configuration list for PBXNativeTarget "CJBaseUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1990,20 +1939,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB2E6B1A7375A406449D5202D6E40BD4 /* Build configuration list for PBXNativeTarget "CJMonitor" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EE39D112141A5E2DCAA73A49843F821E /* Debug */,
-				A1D0391062B234D2497DDDF5A8462A46 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		D61763FE599C239DE672F03945F09823 /* Build configuration list for PBXNativeTarget "Pods-CJMonitorDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				338347CA5E4C27B76D9E45080B084D0E /* Debug */,
 				22A56AFC8340E30A44E7FA625380EED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E431869FBB6337EAA28E5571E7DE5D2E /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2999E483306D4CDAA32C050546E384F7 /* Debug */,
+				97582F1424D659A36E2A1C0779089907 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E920808C1E7E8A9F93F2BE2568FA18D2 /* Build configuration list for PBXNativeTarget "CJMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A89871E123087AB9CD90D0146260668 /* Debug */,
+				4DD9E0506655D6F3F7716A991999C8AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -27,6 +27,9 @@ inhibit_all_warnings! #inhibit_warnings参数能够有效的抑制CocoaPods引�
 
 target 'CJMonitorDemo' do
     pod 'CQDemoKit',    '~> 0.6.2',      :subspecs => ['BaseVC', 'BaseUIKit']
+    
+    pod 'CJBaseUIKit/UIView/CJDragAction' # CJLogSuspendWindow.h 用于控制log视图的弹出与隐藏的悬浮球需要依赖到
+    pod 'CJGRKit/Extension'               # CJLogSuspendWindow.h 需要使用 #import <CJGRKit/UIView+CJKeepBounds.h>
 
     pod 'CJMonitor',    :path => '../’
     pod 'QQ_MTA',       :subspecs => ['AutoTrack']

@@ -7,6 +7,8 @@
 //
 
 #import "LogSuspendWindowViewController.h"
+#import <CJBaseUIKit/UIView+CJDragAction.h>
+#import <CJGRKit/UIView+CJKeepBounds.h>
 
 @interface LogSuspendWindowViewController () {
     
@@ -38,7 +40,16 @@
     }];
     
 
-    [CJLogSuspendWindow showWithFrame:CGRectMake(10, 200, 100, 100)];
+    [CJLogSuspendWindow showWithFrame:CGRectMake(10, 200, 100, 100) configBlock:^(CJLogSuspendWindow *bSuspendWindow) {
+        bSuspendWindow.cjDragEnable = YES;
+        [bSuspendWindow setCjDragBeginBlock:^(UIView *view) {
+            NSLog(@"开始拖曳CJLogSuspendWindow");
+        }];
+        [bSuspendWindow setCjDragEndBlock:^(UIView *view) {
+            NSLog(@"结束拖曳CJLogSuspendWindow");
+            [view cjKeepBounds];
+        }];
+    }];
 }
 
 - (void)appendLog {

@@ -19,8 +19,13 @@
 @property (nonatomic, copy) void (^clickWindowBlock)(UIButton *clickButton);
 @property (nonatomic, copy) void (^closeWindowBlock)(void);
 
-///显示
-+ (void)showWithFrame:(CGRect)frame;
+/*
+ *  显示
+ *
+ *  @param frame            要显示到的位置
+ *  @param configBlock      对这个按钮窗口的定制(可拖动、拖动吸附等)
+ */
++ (void)showWithFrame:(CGRect)frame configBlock:(void(^ _Nullable)(CJLogSuspendWindow *bSuspendWindow))configBlock;
 
 ///移除
 + (void)removeFromScreen;
